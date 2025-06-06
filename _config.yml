@@ -1,0 +1,35 @@
+title: "Hi! I'm Kirthana"
+description: "Welcome to my portfolio."
+theme: jekyll-theme-cayman
+
+# Author info
+author:
+  name: Kirthana
+  email: kirthanaprao@gmail.com
+  github: https://github.com/kirthana1181
+  linkedin: https://www.linkedin.com/in/kirthana-p-rao-6b89b326b/
+
+# Optional social links (add custom HTML in index.md if needed)
+# Or use plugins if you expand with custom Jekyll setup
+
+# URL settings (use when deploying under a project repo instead of username.github.io)
+# url: "https://yourusername.github.io"
+# baseurl: "/my-project-name"
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Plugins (optional - not supported on GitHub Pages by default unless enabled via Actions)
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
+
+# Build settings
+exclude:
+  - README.md
+  - LICENSE
