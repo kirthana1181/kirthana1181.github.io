@@ -1,0 +1,5 @@
+# Kirthana aspiring future Engineer...designing for a better world!
+**Welcome to my profile!!**
+Namaste! I am Kirthana, an aspiring Electronics Engineer. My interest in Mathematics, Programming and Physics, introduced me to **Electronics**. Eversince I have learned about the field of Electronics, specially VLSI and discovered Verilog Programming, it opened a whole new world for me, along with this current evolution in the era of AI.
+In my second year, I would read through the Electronics4U magazine which my professor recommended, and I would read its free version online. During this time is when I remember, discovering the concept of chip-design and AI Hardware Design, which seemed really exciting, as an electronics engineering student, which is why I decided to pursue learning about AI.
+This idea has really bloomed and today, in India, there is a lack of Electronics, specially in this area, of AI Hardware Design. As a nationalist, I aspire to contribute to nation-building, through my role as an engineer, in this field, and contribute to budding Indian AI and Semicondutor Sector, in making India a successfully reliable and developed nation, in these Sectors.
