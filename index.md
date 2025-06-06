@@ -1,5 +1,4 @@
-
-# Hello, I'm Kirthana 👋
+# HI! I am Kirthana...Welcome to my portfolio!
 
 I’m an engineer working on VLSI Design, AI accelerators, and FPGA-based solutions.
 
@@ -10,7 +9,7 @@ I’m an engineer working on VLSI Design, AI accelerators, and FPGA-based soluti
 
 ## 🛠️ Skills
 
-- **Languages:** C, Python, Verilog, Bash
+- **Languages:** C, C++, Python, Verilog, Git, 
 - **Tools:** Git, Netmiko, OpenCV, Vivado, Jekyll
 - **Hardware:** Arduino, Genesys-2 FPGA, GSM Modules, GPS Sensors
   
