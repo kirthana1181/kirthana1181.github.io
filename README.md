@@ -1,4 +1,4 @@
-# Kirthana P Rao...an aspiring future Engineer...engineering for a better world!
+# An aspiring future Engineer...building for a better tomorrow!
 **Welcome to my profile!!**
 
 Namaste! I am Kirthana, an aspiring Electronics Engineer. My deep interest in Mathematics, Computer Programming, and physics introduced me to electronics. Ever since I have learned about the field of Electronics, specially VLSI and discovered Verilog Programming, it opened a whole new world for me, along with this current evolution in the era of AI.
