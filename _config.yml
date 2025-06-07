@@ -1,7 +1,10 @@
-title: "Hi! I'm Kirthana"
-description: "Welcome to my portfolio."
-theme: jekyll-theme-cayman
-
+title: Kirthana's Portfolio
+description: VLSI & Tech Enthusiast
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 # Author info
 author:
   name: Kirthana
