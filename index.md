@@ -122,9 +122,8 @@ When I'm not designing circuits or training models, I'm:
 I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
 
 <!--- **Email:** kirthanaprao@gmail.com  -->
-**LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
-**GitHub:** [Github](https://github.com/kirthana1181)  
-**Phone:** +91 9497024531
+[linkedin](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
+[github](https://github.com/kirthana1181)  
 
 [Get in Touch →](/contact)
 
