@@ -1,14 +1,19 @@
 title: Kirthana
-description:
-remote_theme: LeNPaul/portfolio-jekyll-theme
-
-# Site Settings
-title: Kirthana P Rao
-email: work.kirthana@gmail.com
 description: >-
   ECE Student specializing in VLSI Design, 
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
+
+remote_theme:  LeNPaul/portfolio-jekyll-theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site Settings
+title: Kirthana P Rao
+email: work.kirthana@gmail.com
+description: 
 
 baseurl: "" # Leave empty for username.github.io
 url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
