@@ -76,7 +76,7 @@ I specialize in:
 
 ---
 
-## 💼 Featured Work
+## Featured Work
 
 ### Compressor-Based Dadda Multiplier
 Optimized 8×8 bit multiplier achieving **16% speed improvement** and **8% power reduction** using advanced compression techniques in Xilinx Vivado.
@@ -88,7 +88,7 @@ Designed and implemented a multi-stage pipelined RISC-V processor with comprehen
 
 ---
 
-## 🛠️ Technical Toolkit
+## Technical Toolkit
 
 **Hardware:** Verilog, TL-Verilog, FPGA (Xilinx Vivado), RTL Design, RISC-V ISA  
 **Software:** Python, C, C++, TensorFlow, MySQL
@@ -98,7 +98,7 @@ Designed and implemented a multi-stage pipelined RISC-V processor with comprehen
 
 ---
 
-## 📚 Continuous Learning
+## Continuous Learning 💡
 
 I'm certified in:
 - Machine Learning Specialization (Stanford & DeepLearning.AI)
@@ -108,12 +108,12 @@ I'm certified in:
 
 ---
 
-## 🎵 Beyond the Code
+## Beyond the Code 🎵 
 
 When I'm not designing circuits or training models, I'm:
-- 🎤 a stage-performer, as a trained Carnatic vocalist, and an orator cum emcee
-- 🔧 Exploring and learning possible innovations in the world of Semiconductor and AI
-- 🌍 Exploring food, culture, and lifestyle around the world
+- a stage-performer, as a trained Carnatic vocalist, and an orator cum emcee 🎤 
+- Exploring and learning possible innovations in the world of Semiconductor and AI 🔧 
+- Exploring food, culture, and lifestyle around the world 🌍 
 
 ---
 
@@ -121,7 +121,7 @@ When I'm not designing circuits or training models, I'm:
 
 I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
 
-**Email:** kirthanaprao@gmail.com  
+<!--- **Email:** kirthanaprao@gmail.com  -->
 **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
 **GitHub:** [Github](https://github.com/kirthana1181)  
 **Phone:** +91 9497024531
@@ -130,7 +130,7 @@ I'm always open to discussing new opportunities, collaborations, or innovative i
 
 ---
 
-## 🚀 Open to Opportunities
+## Open to Opportunities
 
 Currently seeking **internships** and **research positions** in:
 - VLSI Design & Verification
@@ -141,4 +141,3 @@ Currently seeking **internships** and **research positions** in:
 ---
 
 *"Designing tomorrow's intelligent systems."*
-```
