@@ -1,0 +1,65 @@
+title: Kirthana
+description:
+theme: minima
+
+# Site Settings
+title: Kirthana P Rao
+email: your-email@gmail.com
+description: >-
+  Electronics & Communication Engineering student specializing in VLSI Design, 
+  AI-ML and Embedded Systems. Passionate about hardware-software co-design 
+  and sustainable manufacturing. love to innovate!🛠️💡
+
+baseurl: "" # Leave empty for username.github.io
+url: "https://kirthanar.github.io" # Replace with your actual GitHub username
+
+# Social Links
+github_username: kirthana1181 (Kirthana)
+linkedin_username: https://www.linkedin.com/in/kirthana-p-rao-6b89b326b/
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - about.md
+  - projects.md
+  - experience.md
+  - skills.md
+  - contact.md
+
+# Collections for organizing content
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  certifications:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
