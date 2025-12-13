@@ -6,25 +6,22 @@ description: >-
 
 theme: jekyll-theme-minimal
 
-
 # Site Settings
-title: Kirthana P Rao
+author: Kirthana P Rao
 email: work.kirthana@gmail.com
-description: 
 
 baseurl: "" # Leave empty for username.github.io
 url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
 
 # Social Links
 social_links:
-  - platform: github
-    user_url: "https://github.com/kirthana1181"
-  - platform: linkedin
-    user_url: "https://www.linkedin.com/in/kirthana-p-rao-6b89b326b/"
+    - { platform: github,   user_url: "https://github.com/kirthana1181" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/kirthana-p-6b89b326b" }
+    - { platform: email,    user_url: "mailto:work.kirthana@gmail.com" }
 
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
