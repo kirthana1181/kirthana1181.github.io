@@ -4,7 +4,7 @@ description: >-
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
 
-remote_theme:  LeNPaul/portfolio-jekyll-theme
+remote_theme:  mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
