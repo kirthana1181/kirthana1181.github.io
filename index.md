@@ -2,101 +2,56 @@
 layout: home
 title: Home
 ---
+
 <style>
-.hero-section {
+.profile-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  margin: 2rem 0 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  border-radius: 15px;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.hero-text {
+.profile-text {
   flex: 1;
 }
 
-.hero-text h1 {
-  margin-top: 0;
-  font-size: 2.5rem;
-  color: #2c3e50;
-}
-
-.hero-text h2 {
-  font-size: 1.2rem;
-  color: #0066cc;
-  font-weight: normal;
-  margin: 1rem 0;
-}
-
-.hero-image {
+.profile-image {
   flex-shrink: 0;
-  position: relative;
 }
 
-.hero-image img {
-  width: 220px;
-  height: 220px;
+.profile-image img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.hero-image img:hover {
-  transform: scale(1.05) rotate(5deg);
-}
-
-.hero-image::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  border: 3px dashed #0066cc;
-  animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  border: 4px solid #0066cc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .hero-section {
+  .profile-container {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
   
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-  
-  .hero-image img {
-    width: 180px;
-    height: 180px;
+  .profile-image img {
+    width: 150px;
+    height: 150px;
   }
 }
 </style>
 
-<div class="hero-section">
-  <div class="hero-text">
+<div class="profile-container">
+  <div class="profile-text">
     <h1>Hi, welcome to my portfolio!</h1>
     <h2>Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
-    <p>I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>.</p>
+    <p>I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.</p>
   </div>
   
-  <div class="hero-image">
+  <div class="profile-image">
     <img src="/assets/images/profile.jpg" alt="Kirthana P Rao">
   </div>
 </div>
-
-<p>As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.</p>
 
 ---
 
@@ -128,7 +83,6 @@ Optimized 8×8 bit multiplier achieving **16% speed improvement** and **8% power
 
 ### RISC-V Pipelined Processor
 Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
-
 
 [View All Projects →](/projects)
 
@@ -187,3 +141,4 @@ Currently seeking **internships** and **research positions** in:
 ---
 
 *"Designing tomorrow's intelligent systems."*
+```
