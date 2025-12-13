@@ -49,7 +49,7 @@ title: Home
   </div>
   
   <div class="profile-image">
-    <img src="/assets/images/profile.jpg" alt="Kirthana P Rao">
+    <img src="/assets/images/profile.jpg" alt="">
   </div>
 </div>
 
