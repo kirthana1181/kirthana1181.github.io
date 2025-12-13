@@ -4,7 +4,7 @@ description: >-
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
 
-theme: jekyll-theme-minimal
+theme: beautiful-jekyll
 
 # Site Settings
 author: Kirthana P Rao
@@ -21,7 +21,7 @@ social_links:
 
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: beautiful-jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
