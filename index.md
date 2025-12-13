@@ -2,12 +2,101 @@
 layout: home
 title: Home
 ---
+<style>
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: 2rem 0 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+}
 
-# Hi, welcome to my portfolio!
+.hero-text {
+  flex: 1;
+}
 
-## Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems
+.hero-text h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
 
-I'm a B.Tech student at **IIITDM Kurnool**, passionate about designing intelligent hardware systems, while working at the intersection of **VLSI** and **Machine Learning** as well as **Embedded Systems**. As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.
+.hero-text h2 {
+  font-size: 1.2rem;
+  color: #0066cc;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.hero-image {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px dashed #0066cc;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
+</style>
+
+<div class="hero-section">
+  <div class="hero-text">
+    <h1>Hi, welcome to my portfolio!</h1>
+    <h2>Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
+    <p>I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>.</p>
+  </div>
+  
+  <div class="hero-image">
+    <img src="/assets/images/profile.jpg" alt="Kirthana P Rao">
+  </div>
+</div>
+
+<p>As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.</p>
 
 ---
 
