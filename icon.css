@@ -1,0 +1,46 @@
+/* Social Icons Styling */
+.social-icon {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0066cc;
+}
+
+.social-icon i {
+  vertical-align: middle;
+}
+
+/* Footer social links */
+.social-media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media-list a {
+  display: flex;
+  align-items: center;
+  color: #828282;
+  text-decoration: none;
+}
+
+.social-media-list a:hover {
+  color: #0066cc;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  fill: currentColor;
+}
