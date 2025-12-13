@@ -4,11 +4,8 @@ description: >-
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
 
-remote_theme:  mmistakes/minimal-mistakes
-plugins:
-  - jekyll-remote_theme
-  - jekyll-feed
-  - jekyll-seo-tag
+theme: jekyll-theme-minimal
+
 
 # Site Settings
 title: Kirthana P Rao
