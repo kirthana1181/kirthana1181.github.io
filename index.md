@@ -60,7 +60,7 @@ Designed and implemented a multi-stage pipelined RISC-V processor with comprehen
 I'm certified in:
 - Machine Learning Specialization (Stanford & DeepLearning.AI)
 - Neural Networks & CNNs (DeepLearning.AI)
-- VLSI Design Flow: RTL to GDS (NPTEL)
+- VLSI Design Flow: RTL to GDS (NPTEL) & C-based VLSI Design(NPTEL)
 - Minor Degree in Internet of Things (IoT)
 
 ---
