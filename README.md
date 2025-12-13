@@ -1,2 +1,2 @@
-# kirthanar.github.io
-This repo consists of my portfolio components.
+# Portfolio
+This repo contains the code components for my portfolio.
