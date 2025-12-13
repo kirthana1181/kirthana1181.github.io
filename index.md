@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-# Hi, I'm Kirthana P Rao 👋
+# Hi, and Welcome to my portfolio!
 
 ## Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast
 
@@ -11,7 +11,7 @@ I'm a B.Tech student at **IIITDM Kurnool**, passionate about designing intellige
 
 ---
 
-## 🎯 What I Do
+## What I Do
 
 I specialize in:
 
@@ -23,18 +23,8 @@ I specialize in:
 
 ---
 
-## 🔬 Current Focus
-
-- Digital circuit optimization and hardware acceleration
-- RISC-V processor design and verification
-- ML models for Advanced Driver Assistance Systems (ADAS)
-- FPGA-based system prototyping
-
----
-
 ## 🌟 Recent Highlights
 
-🏆 **Shortlisted for DVCon India Design Contest 2025** - Stage 1 qualifier  
 🎓 **Samsung ISWDP Fellowship Recipient** - Selected for innovation in semiconductor design  
 🥈 **Silver Medal** - NPTEL Industry 4.0 & Industrial IoT Course  
 🤖 **2nd Runner-up** - RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24  
@@ -50,8 +40,6 @@ Optimized 8×8 bit multiplier achieving **16% speed improvement** and **8% power
 ### RISC-V Pipelined Processor
 Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
 
-### ML-Based ADAS System
-Developed machine learning models for autonomous vehicle perception at **TiHAN-IIT Hyderabad**, working on network handover optimization.
 
 [View All Projects →](/projects)
 
@@ -80,18 +68,17 @@ I'm certified in:
 ## 🎵 Beyond the Code
 
 When I'm not designing circuits or training models, I'm:
-- 🎤 Singing Carnatic music (First Division certified)
-- 🔧 Leading technical initiatives at **ElectroniX Club, IIITDM Kurnool**
-- 🎭 Performing as an orator and emcee
-- 🌍 Speaking six languages: English, Hindi, Kannada, Malayalam, Konkani, Telugu
+- 🎤 a stage-performer, as a trained Carnatic vocalist, and an orator cum emcee
+- 🔧 Exploring and learning possible innovations in the world of Semiconductor and AI
+- 🌍 Exploring food, culture, and lifestyle around the world
 
 ---
 
-## 📫 Let's Connect
+## Let's Connect
 
-I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and embedded systems.
+I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
 
-**Email:** your-email@gmail.com  
+**Email:** kirthanaprao@gmail.com  
 **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
 **GitHub:** [Github](https://github.com/kirthana1181)  
 **Phone:** +91 9497024531
