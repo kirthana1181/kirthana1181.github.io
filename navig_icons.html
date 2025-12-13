@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    
+    <nav class="site-nav">
+      <div class="trigger">
+        <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="page-link" href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a class="page-link" href="{{ '/skills/' | relative_url }}">Skills</a>
+        <a class="page-link" href="{{ '/contact/' | relative_url }}">Contact</a>
+        
+        <!-- Social Icons -->
+        {% if site.github_username %}
+        <a href="https://github.com/kirthana1181" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        
+        {% if site.linkedin_username %}
+        <a href="https://www.linkedin.com/in/kirthana-p-rao-6b89b326b/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</header>
