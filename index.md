@@ -3,11 +3,11 @@ layout: home
 title: Home
 ---
 
-# Hi, and Welcome to my portfolio!
+# Hi, welcome to my portfolio!
 
-## Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast
+## Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems
 
-I'm a B.Tech student at **IIITDM Kurnool**, passionate about designing intelligent hardware systems at the intersection of **VLSI** and **Machine Learning**, and also into **Embedded Systems**. I love optimizing circuits and building efficient, real-world solutions.
+I'm a B.Tech student at **IIITDM Kurnool**, passionate about designing intelligent hardware systems, while working at the intersection of **VLSI** and **Machine Learning** as well as **Embedded Systems**. As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.
 
 ---
 
@@ -25,7 +25,7 @@ I specialize in:
 
 ## 🌟 Recent Highlights
 
-🎓 **Samsung ISWDP Fellowship Recipient** - Selected for innovation in semiconductor design  
+🎓 **Samsung ISWDP Fellowship Recipient** - Selected as a trainee in semiconductor design and fabrication
 🥈 **Silver Medal** - NPTEL Industry 4.0 & Industrial IoT Course  
 🤖 **2nd Runner-up** - RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24  
 ⭐ **Top 0.1%** - Computer Science, CBSE Class XII Boards 2022
@@ -48,8 +48,8 @@ Designed and implemented a multi-stage pipelined RISC-V processor with comprehen
 ## 🛠️ Technical Toolkit
 
 **Hardware:** Verilog, TL-Verilog, FPGA (Xilinx Vivado), RTL Design, RISC-V ISA  
-**Software:** Python, C/C++, TensorFlow, Embedded Systems  
-**Tools:** Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux
+**Software:** Python, C, C++, TensorFlow, MySQL
+**Tools:** Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux OS, VS Code
 
 [Explore My Skills →](/skills)
 
