@@ -1,8 +1,9 @@
 ---
-layout: home
-
-[Home](./index.md)  [Skills](./skills.md)  [Projects](./projects.md)
-
+  layout: home
+  title: Home
+    <div align = "center">
+      [Home](./index.md)  [Skills](./skills.md)  [Projects](./projects.md)
+    </div>
 ---
 
 <style>
