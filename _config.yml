@@ -4,13 +4,13 @@ description: >-
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
 
-theme: beautiful-jekyll
+theme: minima
 
 # Site Settings
 author: Kirthana P Rao
 email: work.kirthana@gmail.com
 
-baseurl: "" # Leave empty for username.github.io
+baseurl: "https://www.kirthanar1181.github.com" # Leave empty for username.github.io
 url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
 
 # Social Links
@@ -21,7 +21,7 @@ social_links:
 
 
 # Build settings
-theme: beautiful-jekyll
+theme: jekyll-theme-minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
