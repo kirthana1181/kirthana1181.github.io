@@ -4,11 +4,21 @@ description: >-
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
 
-theme: minima
-
 # Site Settings
-author: Kirthana P Rao
-email: work.kirthana@gmail.com
+author:
+  name: "Kirthana P Rao"
+  bio: "ECE Student | VLSI | AI-ML | Embedded Systems"
+  avatar: "/assets/images/profile.jpg"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kirthana1181"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-profile"
+    - label: "Gmail"
+      icon: "fab fa-fw fa-email"
+      url: "work.kirthana@gmail.com"
 
 baseurl: "https://www.kirthanar1181.github.com" # Leave empty for username.github.io
 url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
@@ -20,12 +30,17 @@ social_links:
     - { platform: email,    user_url: "mailto:work.kirthana@gmail.com" }
 
 
+remote_theme: minima
 # Build settings
-theme: minima
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+minima: "default"
 
 # Navigation
 header_pages:
