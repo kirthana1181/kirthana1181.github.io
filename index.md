@@ -1,6 +1,8 @@
 ---
 layout: home
 
+[Home](./index.md)  [Skills](./skills.md)  [Projects](./projects.md)
+
 ---
 
 <style>
