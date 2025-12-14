@@ -4,46 +4,46 @@ title: Skills & Tools
 permalink: /skills/
 ---
 
-## Tools I Use
+## 💻 Things I Do
 
 ### 🔧 Hardware Description Languages
-**Verilog** · **TL-Verilog**
+**Verilog** · **SystemVerilog** · **TL-Verilog**
 
-### ⚙️ Programming Languages
-**Python** · **C** · **C++** · **Java**
+### ✅ Verification
+**Universal Verification Methodology (UVM)**
+
+### 🐍 Programming Languages
+**Python** · **C** · **C++**
 
 ### 🌐 Web Development
-**HTML5**
+**HTML5** · **CSS3**
 
-### Scripting
-**Bash** · **Tcl** · **Python**
-
-## Backend
- **MySQL**
+### 📜 Scripting
+**Bash** · **Tcl** · **Python Scripts**
 
 ---
 
-## Tools & Libraries
+## 🧰 Tools & Libraries
 
-### Development Environment
+### 💼 Development Environment
 **Visual Studio Code** · **Git** <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="16" height="16" style="vertical-align: middle;"> · **Jupyter Notebook** · **Spyder**
 
-### FPGA & Digital Design
+### ⚡ FPGA & Digital Design
 **Xilinx Vivado** · **Xilinx ISE** · **GTKWave** · **ModelSim** · **Questa**
 
-###  Analog & Circuit Design
+### 🎨 Analog & Circuit Design
 **Cadence Virtuoso** · **LTSpice** · **Multisim** · **Tina-Ti**
 
-###  PCB Design & Layout
+### 📐 PCB Design & Layout
 **KiCAD** · **Eagle** · **Altium Designer**
 
-### ASIC Design Flow
+### 🏗️ ASIC Design Flow
 **OpenLANE** · **OpenSTA** · **Magic** · **Yosys**
 
-### Physical Design
+### 🔬 Physical Design
 **Cadence Innovus** · **Cadence Genus** · **Synopsys Design Compiler**
 
-### Simulation & Analysis
+### 🧮 Simulation & Analysis
 **MATLAB** · **Simulink** · **Octave**
 
 ### 📊 HDL Simulation
@@ -53,7 +53,7 @@ permalink: /skills/
 
 ## 💾 Operating Systems
 
-**Windows** 🪟 · **Linux** 🐧(Ubuntu)
+**Windows** 🪟 · **Linux** 🐧 (Ubuntu, Debian, Fedora)
 
 ---
 
@@ -63,20 +63,20 @@ permalink: /skills/
 **Arduino** (Uno, Mega, Nano) · **ESP32** · **ESP8266** · **LPC-2148** · **STM32**
 
 ### FPGA Boards
-**Xilinx Artix-7**
+**Xilinx Artix-7** · **Spartan-6** · **Zynq-7000**
 
 ### Development Kits
-**Raspberry Pi**
+**Aries Vega Processors** · **TI LaunchPad** · **Raspberry Pi**
 
 ---
 
 ## 🏛️ Architectures & Protocols
 
 ### Processor Architectures
-**RISC-V ISA** · **ARM Cortex**
+**RISC-V ISA** · **ARM Cortex** · **AVR** · **PIC**
 
 ### Communication Protocols
-**AXI4** · **AXI4-Lite** · **I2C** · **SPI** · **UART** · **USB**
+**AXI4** · **AXI4-Lite** · **APB** · **AHB** · **I2C** · **SPI** · **UART** · **USB**
 
 ### Memory Interfaces
 **DDR3/DDR4** · **SDRAM** · **Flash**
@@ -89,14 +89,13 @@ permalink: /skills/
 **TensorFlow 2.0** · **Keras** · **PyTorch** · **Scikit-learn**
 
 ### Libraries
-**NumPy** · **Pandas** · **Matplotlib**
+**NumPy** · **Pandas** · **Matplotlib** · **OpenCV**
 
 ### Specializations
 - Neural Networks & Deep Learning
 - Convolutional Neural Networks (CNNs)
 - Computer Vision
 - Autonomous Systems
-- RTL Design
 
 ---
 
@@ -109,7 +108,7 @@ permalink: /skills/
 **Agile** · **Scrum** · **Test-Driven Development (TDD)**
 
 ### Programming Paradigms
-**Object-Oriented Programming (OOP)** · **Functional Programming and Verification** · **Hardware-Software Co-design**
+**Object-Oriented Programming (OOP)** · **Functional Programming** · **Hardware-Software Co-design**
 
 ---
 
@@ -132,6 +131,7 @@ permalink: /skills/
 
 ### 🏆 Special Recognition
 - ⭐ **ISWDP Samsung Student Fellowship Recipient**
+- 🏅 **DVCon India Design Contest 2025** - Stage 1 Shortlisted
 
 ---
 
@@ -145,8 +145,15 @@ permalink: /skills/
 - Power Analysis & Low-Power Design
 - Design for Testability (DFT)
 
+### Verification
+- Testbench Development
+- Functional Verification
+- UVM Methodology
+- Assertion-Based Verification
+- Coverage-Driven Verification
 
 ### Embedded Systems
+- Firmware Development
 - Real-Time Operating Systems (RTOS)
 - Device Driver Development
 - IoT System Design
@@ -163,6 +170,8 @@ permalink: /skills/
 
 ## 🌱 Currently Learning
 
+- 🔥 Advanced UVM Verification Techniques
+- 🚀 SystemVerilog Assertions (SVA)
 - 🧠 Hardware Acceleration for Deep Learning
 - ⚡ High-Performance Computing Architectures
 - 🔐 Hardware Security & Trust
@@ -172,14 +181,26 @@ permalink: /skills/
 ## 📊 Skill Proficiency
 
 ### Expert Level ⭐⭐⭐⭐⭐
-Verilog · C · Python · RTL Design · FPGA Development · PCB Design · MATLAB · Web Development
+Verilog · C · Python · RTL Design · FPGA Development
 
 ### Advanced Level ⭐⭐⭐⭐
 SystemVerilog · C++ · TensorFlow · Digital Design · Embedded Systems
 
+### Intermediate Level ⭐⭐⭐
+UVM · ASIC Design · PCB Design · MATLAB · Web Development
+
 ### Learning 📚
-Formal Verification · RTL Verification · Cybersecurity
+Formal Verification · Chip Design · Advanced DFT · Quantum Computing
 
 ---
 
 *Skills continuously evolving. Last updated: December 2025*
+
+---
+
+<div style="text-align: center; padding: 2rem 0; background: #f8f9fa; border-radius: 10px; margin-top: 2rem;">
+  <p style="color: #666; margin-bottom: 1rem;">&copy; 2025 Kirthana P Rao. All rights reserved.</p>
+  <a href="/" style="display: inline-block; padding: 0.8rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">
+    🏠 Back to Home
+  </a>
+</div>
