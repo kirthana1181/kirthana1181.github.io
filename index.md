@@ -67,12 +67,15 @@ I specialize in:
 
 ---
 
-## 🌟 Recent Highlights
+## Highlights & Achievements
 
-🎓 **Samsung ISWDP Fellowship Recipient** - Selected as a trainee in semiconductor design and fabrication
-🥈 **Silver Medal** - NPTEL Industry 4.0 & Industrial IoT Course  
-🤖 **2nd Runner-up** - RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24  
-⭐ **Top 0.1%** - Computer Science, CBSE Class XII Boards 2022
+- **Samsung ISWDP Fellowship Recipient** - Selected as a trainee in semiconductor design and fabrication
+
+- **Silver Medal** - NPTEL Industry 4.0 & Industrial IoT Course  
+
+- **2nd Runner-up** - RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24  
+
+- **Top 0.1%** - Computer Science, CBSE Class XII Boards 2022
 
 ---
 
