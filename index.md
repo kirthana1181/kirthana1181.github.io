@@ -1,9 +1,11 @@
 ---
   layout: home
   title: Home
+<style
     <div align = "center">
       [Home](./index.md)  [Skills](./skills.md)  [Projects](./projects.md)
     </div>
+</style>
 ---
 
 <style>
