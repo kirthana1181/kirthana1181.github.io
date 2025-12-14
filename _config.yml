@@ -38,9 +38,7 @@ url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
 header_pages:
   - about.md
   - projects.md
-  - experience.md
   - skills.md
-  - contact.md
 
 # Collections for organizing content
 collections:
