@@ -166,6 +166,42 @@
             font-size: 0.9rem;
         }
 
+        .page-footer {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .page-footer p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-home i {
+            font-size: 1.1rem;
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -274,7 +310,6 @@
                 </div>
             </div>
 
-
             <!-- Project 5: Line-Following Robot -->
             <div class="project-card" data-category="embedded">
                 <div class="project-header">
@@ -313,10 +348,9 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="page-footer">
-        <p>&copy; 2025 Kirthana P Rao. All rights reserved.</p>
+        <div class="page-footer">
+            <p>&copy; 2025 Kirthana P Rao. All rights reserved.</p>
             <a href="/" class="back-home">
                 <i class="fas fa-home"></i> Back to Home
             </a>
