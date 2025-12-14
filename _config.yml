@@ -3,34 +3,36 @@ description: >-
   ECE Student specializing in VLSI Design, 
   AI-ML and Embedded Systems. Passionate about hardware-software co-design, AI Hardware, 
   and sustainable manufacturing. love to innovate!🛠️💡
-
-theme: minima
-# Site Settings
-author:
-  name: "Kirthana P Rao"
-  bio: "ECE Student | VLSI | AI-ML | Embedded Systems"
-  avatar: "/assets/images/profile.jpg"
   
-baseurl: "https://www.kirthanar1181.github.com" # Leave empty for username.github.io
-url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
-
-# Social Links
-social_links:
-    - { platform: github,   user_url: "https://github.com/kirthana1181" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/kirthana-p-6b89b326b" }
-    - { platform: email,    user_url: "mailto:work.kirthana@gmail.com" }
-
-
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 # Build settings
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-include-cache
 
-minima: "default"
+minimal_mistakes_skin: "default"
+# Site Settings
+author:
+  name: "Kirthana P Rao"
+  bio: "ECE Student | VLSI | AI-ML | Embedded Systems"
+  avatar: "/assets/images/profile.jpg"
+  links:
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/kirthana1181"
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/kirthana-p-6b89b326b"
+  - label: "Email"
+    icon: "fas fa-fw fa-envelope"
+    url: "mailto: work.kirthana@gmail.com"
+  
+baseurl: "" # Leave empty for username.github.io https://www.kirthanar1181.github.com
+url: "https://kirthana1181.github.io" # Replace with your actual GitHub username
 
 # Navigation
 header_pages:
