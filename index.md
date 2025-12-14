@@ -87,7 +87,7 @@ Optimized 8×8 bit multiplier achieving **16% speed improvement** and **8% power
 ### RISC-V Pipelined Processor
 Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
 
-[View All Projects →](/projects)
+[View All Projects](/projects)
 
 ---
 
@@ -97,7 +97,7 @@ Designed and implemented a multi-stage pipelined RISC-V processor with comprehen
 **Software:** Python, C, C++, TensorFlow, MySQL
 **Tools:** Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux OS, VS Code
 
-[Explore My Skills →](/skills)
+[Explore My Skills](/skills)
 
 ---
 
@@ -128,7 +128,7 @@ I'm always open to discussing new opportunities, collaborations, or innovative i
 [Linkedin](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
 [Github](https://github.com/kirthana1181)  
 
-[Get in Touch →](/contact)
+<!--[Get in Touch](/contact)-->
 
 ---
 
