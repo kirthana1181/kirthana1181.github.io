@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.2"
 
 # Default theme
-gem "minima", "~> 2.5"
+jekyll-remote-theme "minima", "~> 2.5"
 
 # Jekyll plugins
 group :jekyll_plugins do
