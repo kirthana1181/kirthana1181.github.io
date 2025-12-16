@@ -140,21 +140,21 @@ I'm always open to discussing new opportunities, collaborations, or innovative i
 <p align="center">
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" />
   </a>
 
   &nbsp;
 
   <!-- GitHub -->
   <a href="https://github.com/kirthana1181">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" />
   </a>
 
   &nbsp;
 
   <!-- Email -->
   <a href="mailto:work.kirthana@email.com">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="32" height="32" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" />
   </a>
 </p>
 <!--
