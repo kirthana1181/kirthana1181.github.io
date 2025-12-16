@@ -133,9 +133,41 @@ When I'm not designing circuits or training models, I'm:
 
 I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
 
-<!--- **Email:** kirthanaprao@gmail.com  -->
-[Linkedin](https://www.linkedin.com/in/kirthana-p-6b89b326b/)  
-[Github](https://github.com/kirthana1181)  
+<!--- **Email:** kirthanaprao@gmail.com  
+[Linkedin]()  
+[Github]()
+[Email]() -->
+<p align="center">
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="32" height="32" />
+  </a>
+
+  &nbsp;&nbsp;
+
+  <!-- GitHub -->
+  <a href="https://github.com/kirthana1181">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="32" height="32" />
+  </a>
+
+  &nbsp;&nbsp;
+
+  <!-- Email -->
+  <a href="mailto:work.kirthana@email.com">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="32" height="32" />
+  </a>
+</p>
+<!--
+<a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
+  <img src="https://img.icons8.com/ios-filled/50/0A66C2/linkedin.png"/>
+</a>
+<a href="https://github.com/kirthana1181">
+  <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png"/>
+</a>
+<a href="mailto:work.kirthana@gmail.com">
+  <img src="https://img.icons8.com/ios-filled/50/D44638/email.png"/>
+</a>
+-->
 
 <!--[Get in Touch](/contact)-->
 
