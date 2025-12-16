@@ -61,19 +61,25 @@
             padding-bottom: 0.5rem;
         }
 
+        h3 {
+            margin-bottom: 0.75rem;
+        }
+
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+            align-items: flex-start;
         }
 
         .skill-category {
             background: #f8f9fa;
-            padding: 1.5rem;
+            padding: 1.25rem 1.5rem;
             border-radius: 8px;
             border-left: 4px solid #0066cc;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 100%;
         }
 
         .skill-category:hover {
@@ -81,23 +87,16 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .skill-category h3 {
-            margin-top: 0;
-            color: #333;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
         }
 
         .skill-tag {
             background: #fff;
-            padding: 0.4rem 0.8rem;
+            padding: 0.35rem 0.8rem;
             border-radius: 20px;
             font-size: 0.9rem;
             border: 1px solid #ddd;
@@ -105,6 +104,7 @@
             align-items: center;
             gap: 0.3rem;
             transition: all 0.2s ease;
+            white-space: nowrap;
         }
 
         .skill-tag:hover {
@@ -115,23 +115,27 @@
         }
 
         .icon {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             vertical-align: middle;
         }
 
         .cert-section {
             background: #f8f9fa;
-            padding: 2rem;
+            padding: 2rem 1.5rem;
             border-radius: 8px;
             margin: 2rem 0;
         }
 
+        .cert-section h3 {
+            margin-top: 1rem;
+        }
+
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-top: 0.75rem;
         }
 
         .cert-badge {
@@ -160,13 +164,13 @@
         }
 
         .proficiency-item {
-            margin: 1.5rem 0;
+            margin: 1.25rem 0;
         }
 
         .proficiency-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-weight: 500;
         }
 
@@ -188,6 +192,35 @@
             from { width: 0; }
         }
 
+        .boards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+        }
+
+        .board-card {
+            background: #f8f9fa;
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .board-card h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .board-card p {
+            line-height: 1.5;
+        }
+
+        .board-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
         .footer {
             text-align: center;
             padding: 2rem 0;
@@ -198,41 +231,32 @@
 
         .footer p {
             color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .boards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .board-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .board-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 0.75rem;
         }
 
         @media (max-width: 768px) {
-            .skills-grid, .cert-grid, .boards-grid {
-                grid-template-columns: 1fr;
-            }
-            
             body {
                 padding: 1rem;
             }
-            
+
             h1 {
                 font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .skills-grid,
+            .cert-grid,
+            .boards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-category,
+            .board-card {
+                padding: 1rem 1.25rem;
             }
         }
     </style>
@@ -240,7 +264,7 @@
 <body>
     <!-- Navigation -->
     <div class="nav">
-        <a href="index.html">🏠 Back to Home</a>
+        <a href="index.html">Back to Home</a>
     </div>
 
     <h1>💻 Skills & Tools</h1>
@@ -255,10 +279,9 @@
                     <img src="https://cdn.simpleicons.org/v/5C85D6" class="icon" alt="Verilog">
                     Verilog
                 </span>
-                <span class="skill-tag"> TL-Verilog</span>
+                <span class="skill-tag">TL-Verilog</span>
             </div>
         </div>
-        
     </div>
 
     <!-- Programming Languages -->
@@ -281,7 +304,7 @@
                 </span>
             </div>
         </div>
-        
+
         <div class="skill-category">
             <h3>Web & Scripting</h3>
             <div class="skill-tags">
@@ -342,17 +365,17 @@
                     <img src="https://cdn.simpleicons.org/xilinx/E01F27" class="icon" alt="Xilinx">
                     ISE
                 </span>
-                <span class="skill-tag"> GTKWave</span>
-                <span class="skill-tag"> ModelSim</span>
+                <span class="skill-tag">GTKWave</span>
+                <span class="skill-tag">ModelSim</span>
             </div>
         </div>
 
         <div class="skill-category">
             <h3>ASIC Design Flow</h3>
             <div class="skill-tags">
-                <span class="skill-tag"> OpenLANE</span>
-                <span class="skill-tag"> OpenSTA</span>
-                <span class="skill-tag"> Magic</span>
+                <span class="skill-tag">OpenLANE</span>
+                <span class="skill-tag">OpenSTA</span>
+                <span class="skill-tag">Magic</span>
                 <span class="skill-tag">
                     <img src="https://cdn.simpleicons.org/yosys/000000" class="icon" alt="Yosys">
                     Yosys
@@ -363,17 +386,17 @@
         <div class="skill-category">
             <h3>Physical Design</h3>
             <div class="skill-tags">
-                <span class="skill-tag"> Innovus</span>
-                <span class="skill-tag"> Genus</span>
-                <span class="skill-tag"> Design Compiler</span>
+                <span class="skill-tag">Innovus</span>
+                <span class="skill-tag">Genus</span>
+                <span class="skill-tag">Design Compiler</span>
             </div>
         </div>
 
         <div class="skill-category">
             <h3>Circuit Design</h3>
             <div class="skill-tags">
-                <span class="skill-tag"> Virtuoso</span>
-                <span class="skill-tag"> LTSpice</span>
+                <span class="skill-tag">Virtuoso</span>
+                <span class="skill-tag">LTSpice</span>
             </div>
         </div>
 
@@ -384,8 +407,8 @@
                     <img src="https://cdn.simpleicons.org/kicad/314CB0" class="icon" alt="KiCAD">
                     KiCAD
                 </span>
-                <span class="skill-tag"> Eagle</span>
-                <span class="skill-tag"> Altium</span>
+                <span class="skill-tag">Eagle</span>
+                <span class="skill-tag">Altium</span>
             </div>
         </div>
 
@@ -408,7 +431,8 @@
         <div class="board-card">
             <h4>Microcontrollers</h4>
             <p>
-                <img src="https://cdn.simpleicons.org/arduino/00979D" class="icon" alt="Arduino"> Arduino<br>
+                <img src="https://cdn.simpleicons.org/arduino/00979D" class="icon" alt="Arduino">
+                Arduino<br>
                 ESP32 • ESP8266<br>
                 STM32 • LPC-2148
             </p>
@@ -453,6 +477,7 @@
                 </span>
             </div>
         </div>
+    </div>
 
     <!-- AI/ML -->
     <h2>🤖 AI/ML & Data Science</h2>
@@ -486,7 +511,7 @@
                     <img src="https://cdn.simpleicons.org/pandas/150458" class="icon" alt="Pandas">
                     Pandas
                 </span>
-                <span class="skill-tag"> Matplotlib</span>
+                <span class="skill-tag">Matplotlib</span>
                 <span class="skill-tag">
                     <img src="https://cdn.simpleicons.org/opencv/5C3EE8" class="icon" alt="Seaborn">
                     Seaborn
@@ -498,31 +523,32 @@
     <!-- Certifications -->
     <h2>📚 Certifications</h2>
     <div class="cert-section">
-        <h3> 🧠Machine Learning & AI</h3>
+        <h3>🧠 Machine Learning</h3>
         <div class="cert-grid">
-            <div class="cert-badge"> - Machine Learning Specialization - Stanford & DeepLearning.AI</div>
-            <div class="cert-badge"> - Neural Networks and CNNs - DeepLearning.AI</div>
-            <div class="cert-badge"> - Deep Learning Specialization - DeepLearning.AI</div>
+            <div class="cert-badge">Machine Learning Specialization - Stanford & DeepLearning.AI</div>
+            <div class="cert-badge">Neural Networks and CNNs - DeepLearning.AI</div>
+            <div class="cert-badge">Deep Learning Specialization - DeepLearning.AI</div>
         </div>
 
-        <h3 style="margin-top: 2rem;">🔌 VLSI & Hardware Design</h3>
+        <h3 style="margin-top: 2rem;"> VLSI & Hardware Design</h3>
         <div class="cert-grid">
-            <div class="cert-badge"> - VLSI Design Flow: RTL to GDS - NPTEL (IIIT Delhi)</div>
-            <div class="cert-badge"> - Digital Design with Verilog - NPTEL (IIT Guwahati)</div>
-            <div class="cert-badge"> - C-Based VLSI Design - NPTEL (IIT Guwahati)</div>
-            <div class="cert-badge"> - Physical Design of ASICs - NPTEL</div>
+            <div class="cert-badge">VLSI Design Flow: RTL to GDS - NPTEL (IIIT Delhi)</div>
+            <div class="cert-badge">Digital Design with Verilog - NPTEL (IIT Guwahati)</div>
+            <div class="cert-badge">C-Based VLSI Design - NPTEL (IIT Guwahati)</div>
+            <div class="cert-badge">Physical Design of ASICs - NPTEL</div>
         </div>
 
         <h3 style="margin-top: 2rem;">🌐 IoT & Industry 4.0</h3>
         <div class="cert-grid">
-            <div class="cert-badge"> - Minor Degree in IoT - IIITDM Kurnool</div>
-            <div class="cert-badge silver"> - Introduction to Industry 4.0 & IIoT - NPTEL (Silver Medal)</div>
+            <div class="cert-badge">Minor Degree in IoT - IIITDM Kurnool</div>
+            <div class="cert-badge silver">Introduction to Industry 4.0 & IIoT - NPTEL (Silver Medal)</div>
         </div>
 
-        <h3 style="margin-top: 2rem;"> Special Recognition</h3>
+        <h3 style="margin-top: 2rem;">Special Recognition</h3>
         <div class="cert-grid">
-            <div class="cert-badge"> - ISWDP Samsung Student Fellowship Recipient</div>
-            <div class="cert-badge"> - DVCon India Design Contest 2025 - Stage 1 Shortlisted</div>
+            <div class="cert-badge">ISWDP Samsung Student Fellowship Recipient</div>
+            <div class="cert-badge">One among the top 0.1% of candidates in CBSE Computer Science Boards Class 12 </div>
+            <div class="cert-badge">DVCon India Design Contest 2025 - Stage 1 Shortlisted</div>
         </div>
     </div>
 
@@ -537,7 +563,9 @@
             <div class="proficiency-bar">
                 <div class="proficiency-fill" style="width: 100%"></div>
             </div>
-            <p style="margin-top: 0.5rem; color: #666;">Verilog · C · Python · RTL Design · TensorFlow · Digital Design · Static Timing Analysis</p>
+            <p style="margin-top: 0.5rem; color: #666;">
+                Verilog · C · Python · RTL Design · TensorFlow · Digital Design · Static Timing Analysis
+            </p>
         </div>
 
         <div class="proficiency-item">
@@ -548,7 +576,9 @@
             <div class="proficiency-bar">
                 <div class="proficiency-fill" style="width: 80%"></div>
             </div>
-            <p style="margin-top: 0.5rem; color: #666;">ASIC Design · PCB Design · MATLAB · C++ · OOP · Embedded Systems · HLS Programming · IoT</p>
+            <p style="margin-top: 0.5rem; color: #666;">
+                ASIC Design · PCB Design · MATLAB · C++ · OOP · Embedded Systems · HLS Programming · IoT
+            </p>
         </div>
 
         <div class="proficiency-item">
@@ -559,7 +589,9 @@
             <div class="proficiency-bar">
                 <div class="proficiency-fill" style="width: 60%"></div>
             </div>
-            <p style="margin-top: 0.5rem; color: #666;"> MATLAB Programming · Web Development · Simulink</p>
+            <p style="margin-top: 0.5rem; color: #666;">
+                MATLAB Programming · Web Development · Simulink
+            </p>
         </div>
 
         <div class="proficiency-item">
@@ -570,14 +602,18 @@
             <div class="proficiency-bar">
                 <div class="proficiency-fill" style="width: 40%"></div>
             </div>
-            <p style="margin-top: 0.5rem; color: #666;">RTL Verification · DFT · UVM · SystemVerilog</p>
+            <p style="margin-top: 0.5rem; color: #666;">
+                RTL Verification · DFT · UVM · SystemVerilog
+            </p>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2025 Kirthana P Rao. All rights reserved.</p>
-        <p style="color: #999; font-size: 0.9rem;">Skills continuously evolving. Last updated: December 2025</p>
+        <p style="color: #999; font-size: 0.9rem;">
+            Skills continuously evolving. Last updated: December 2025
+        </p>
     </div>
 </body>
 </html>
