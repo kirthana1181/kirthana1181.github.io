@@ -1,8 +1,221 @@
 ---
 layout: page
 title: Skills & Tools
-permalink: /skills/
 ---
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+    }
+
+    /* Navigation */
+    nav {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+        background: rgba(255,255,255,0.2);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        color: #0066cc;
+        margin: 2rem 0 1rem;
+        font-size: 1.8rem;
+        border-bottom: 3px solid #0066cc;
+        padding-bottom: 0.5rem;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .skill-category {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #0066cc;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .skill-category h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .skill-tag {
+        background: #fff;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        border: 1px solid #ddd;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        transition: all 0.2s ease;
+    }
+
+    .skill-tag:hover {
+        background: #0066cc;
+        color: white;
+        border-color: #0066cc;
+        transform: scale(1.05);
+    }
+
+    /* Certifications */
+    .cert-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .cert-list li {
+        background: #f8f9fa;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        border-left: 4px solid #667eea;
+    }
+
+    .cert-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 5px;
+        margin-right: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .cert-badge.silver {
+        background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+    }
+
+    /* Proficiency Bars */
+    .proficiency-section {
+        margin: 2rem 0;
+    }
+
+    .proficiency-item {
+        margin: 1.5rem 0;
+    }
+
+    .proficiency-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .proficiency-bar {
+        background: #e0e0e0;
+        height: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .proficiency-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #0066cc, #00cc66);
+        transition: width 1s ease;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        margin-top: 3rem;
+    }
+
+    footer p {
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .back-home-btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .back-home-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    @media (max-width: 768px) {
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .container {
+            padding: 1rem;
+        }
+    }
+</style>
+---
+<div style="text-align: center; margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
+<a href="/index.md" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Home</a> |
+<a href="/projects.html" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Projects</a> 
+</div>
 
 ## 💻 Things I Do
 
@@ -153,9 +366,7 @@ permalink: /skills/
 - Coverage-Driven Verification
 
 ### Embedded Systems
-- Firmware Development
 - Real-Time Operating Systems (RTOS)
-- Device Driver Development
 - IoT System Design
 - Sensor Integration
 
