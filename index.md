@@ -143,14 +143,14 @@ I'm always open to discussing new opportunities, collaborations, or innovative i
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="32" height="32" />
   </a>
 
-  &nbsp;&nbsp;
+  &nbsp;
 
   <!-- GitHub -->
   <a href="https://github.com/kirthana1181">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="32" height="32" />
   </a>
 
-  &nbsp;&nbsp;
+  &nbsp;
 
   <!-- Email -->
   <a href="mailto:work.kirthana@email.com">
