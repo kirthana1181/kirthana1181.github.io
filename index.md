@@ -1,5 +1,6 @@
 ---
   layout: home
+---
 <div style="text-align: center; margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
   <a href="/projects" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Projects</a> |
   <a href="/skills" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Skills</a> | 
@@ -7,6 +8,7 @@
   <!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
   <!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
 </div>
+
 ---
 
 <style>
