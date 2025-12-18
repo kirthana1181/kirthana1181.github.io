@@ -13,7 +13,7 @@
   <a href="/experience" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Experience</a> |  -->
   <!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
   <!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
-</div>
+
 
 ---
 
