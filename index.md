@@ -78,9 +78,15 @@ a:hover {
   border-radius: 999px;
   font-size: 0.85rem;
   margin: 0.2rem;
+
+@media (prefers-color-scheme: dark) {
+  body { background:#0f172a; color:#e5e7eb; }
+  .card { background:#020617; }
+}
 }
 </style>
 
+---
 <section class="card">
 <div class="profile-container">
   <div class="profile-text">
@@ -168,27 +174,32 @@ When I'm not designing circuits or training models, I'm:
 ---
 
 ## Let's Connect
+---
+<style
+  
+  .socials img {
+  filter: grayscale(1);
+  transition: 0.3s;
+  }
+  .socials img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  } 
+  
+</style>
 
 I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
 
-<!--- **Email:** kirthanaprao@gmail.com  
-[Linkedin]()  
-[Github]()
-[Email]() -->
 <p align="center">
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" />
   </a>
 
-  &nbsp;
-
   <!-- GitHub -->
   <a href="https://github.com/kirthana1181">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" />
   </a>
-
-  &nbsp;
 
   <!-- Email -->
   <a href="mailto:work.kirthana@email.com">
