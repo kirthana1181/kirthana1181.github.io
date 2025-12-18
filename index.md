@@ -1,7 +1,8 @@
 ---
-  layout: home
+layout: home
 ---
-<div style = "
+
+<div style="
   display:flex;
   justify-content:center;
   gap:2rem;
@@ -9,11 +10,12 @@
   font-weight:600;">
   <a href="/projects">Projects</a>
   <a href="/skills">Skills</a>
-</div> <!-- |
-  <a href="/experience" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Experience</a> |  -->
-  <!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
-  <!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
-
+</div>
+<!-- |
+  <a href="/experience" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Experience</a> |
+-->
+<!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
+<!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
 
 ---
 
@@ -70,166 +72,176 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-.badge {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background: #eef2ff;
-  color: var(--primary);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  margin: 0.2rem;
+/* Hero layout */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-text {
+  flex: 1 1 280px;
+}
+
+.profile-image img {
+  max-width: 260px;
+  border-radius: 14px;
+}
+
+/* Reusable list styling inside cards */
+.card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.3rem;
+}
+
+/* Social icons */
+.socials img {
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.socials img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
 
 @media (prefers-color-scheme: dark) {
   body { background:#0f172a; color:#e5e7eb; }
   .card { background:#020617; }
 }
-}
 </style>
 
 ---
+
 <section class="card">
-<div class="profile-container">
-  <div class="profile-text">
-    <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
-    <h1>Hi, I'm Kirthana</h1>
-    <h2>Electronics & Communication Engineer</h2>
-    <p>
-      B.Tech student at <strong>IIITDM Kurnool</strong>, working at the
-      intersection of <strong>VLSI Design</strong>,
-      <strong>AI-ML</strong>, and <strong>Embedded Systems</strong>.
-      Passionate about building intelligent, efficient hardware-software systems.
-    </p>
-  </div>
+  <div class="profile-container">
+    <div class="profile-text">
+      <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
+      <h1>Hi, I'm Kirthana</h1>
+      <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
+      <p>
+        I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
+        <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
+      </p>
+    </div>
 
-  <div class="profile-image">
-    <img src="/assets/images/profile.jpg" alt="">
+    <div class="profile-image">
+      <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+    </div>
   </div>
-</div>
 </section>
-
----
 
 <section>
   <div class="card">
     <h2>What I Do</h2>
-    <p><strong>Hardware Design</strong> – Creating optimized digital systems from RTL to silicon, with expertise in FPGA prototyping and RISC-V architecture</p>
-    <p><strong>AI-ML Integration</strong> – Developing machine learning models for autonomous systems and exploring hardware acceleration techniques</p>
-    <p><strong>Embedded Systems</strong> – Building IoT solutions and embedded applications that bridge software intelligence with hardware efficiency</p>
+    <p><strong>Hardware Design</strong> – Creating optimized digital systems from RTL to silicon, with expertise in FPGA prototyping and RISC-V architecture.</p>
+    <p><strong>AI-ML Integration</strong> – Developing machine learning models for autonomous systems and exploring hardware acceleration techniques.</p>
+    <p><strong>Embedded Systems</strong> – Building IoT solutions and embedded applications that bridge software intelligence with hardware efficiency.</p>
   </div>
 </section>
 
----
+<section>
+  <div class="card">
+    <h2>Highlights &amp; Achievements</h2>
+    <ul>
+      <li><strong>Samsung ISWDP Fellowship Recipient</strong> – Selected as a trainee in semiconductor design and fabrication.</li>
+      <li><strong>Silver Medal</strong> – NPTEL Industry 4.0 &amp; Industrial IoT Course.</li>
+      <li><strong>2nd Runner-up</strong> – RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24.</li>
+      <li><strong>Top 0.1%</strong> – Computer Science, CBSE Class XII Boards 2022.</li>
+    </ul>
+  </div>
+</section>
 
-## Highlights & Achievements
+<section>
+  <div class="card">
+    <h2>Featured Work</h2>
+    <h3>Compressor-Based Dadda Multiplier</h3>
+    <p>
+      Optimized 8×8 bit multiplier achieving <strong>16% speed improvement</strong> and <strong>8% power reduction</strong>
+      using advanced compression techniques in Xilinx Vivado.
+    </p>
+    <h3>RISC-V Pipelined Processor</h3>
+    <p>
+      Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
+    </p>
+    <p><a href="/projects">View All Projects →</a></p>
+  </div>
+</section>
 
-- **Samsung ISWDP Fellowship Recipient** - Selected as a trainee in semiconductor design and fabrication
+<section>
+  <div class="card">
+    <h2>Technical Toolkit</h2>
+    <p><strong>Hardware:</strong> Verilog, TL-Verilog, FPGA (Xilinx Vivado), RTL Design, RISC-V ISA.</p>
+    <p><strong>Software:</strong> Python, C, C++, TensorFlow, MySQL.</p>
+    <p><strong>Tools:</strong> Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux OS, VS Code.</p>
+    <p><a href="/skills">Explore My Skills →</a></p>
+  </div>
+</section>
 
-- **Silver Medal** - NPTEL Industry 4.0 & Industrial IoT Course  
+<section>
+  <div class="card">
+    <h2>Continuous Learning 💡</h2>
+    <p>I’m certified in:</p>
+    <ul>
+      <li>Machine Learning Specialization (Stanford &amp; DeepLearning.AI).</li>
+      <li>Neural Networks &amp; CNNs (DeepLearning.AI).</li>
+      <li>VLSI Design Flow: RTL to GDS (NPTEL) &amp; C-based VLSI Design (NPTEL).</li>
+      <li>Minor Degree in Internet of Things (IoT).</li>
+    </ul>
+  </div>
+</section>
 
-- **2nd Runner-up** - RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24  
+<section>
+  <div class="card">
+    <h2>Beyond the Code 🎵</h2>
+    <ul>
+      <li>A stage performer, trained Carnatic vocalist, and an orator cum emcee 🎤.</li>
+      <li>Exploring and learning possible innovations in the world of Semiconductor and AI 🔧.</li>
+      <li>Exploring food, culture, and lifestyle around the world 🌍.</li>
+    </ul>
+  </div>
+</section>
 
-- **Top 0.1%** - Computer Science, CBSE Class XII Boards 2022
-
----
-
-## Featured Work
-
-### Compressor-Based Dadda Multiplier
-Optimized 8×8 bit multiplier achieving **16% speed improvement** and **8% power reduction** using advanced compression techniques in Xilinx Vivado.
-
-### RISC-V Pipelined Processor
-Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
-
-[View All Projects](/projects)
-
----
-
-## Technical Toolkit
-
-**Hardware:** Verilog, TL-Verilog, FPGA (Xilinx Vivado), RTL Design, RISC-V ISA  
-**Software:** Python, C, C++, TensorFlow, MySQL
-**Tools:** Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux OS, VS Code
-
-[Explore My Skills](/skills)
-
----
-
-## Continuous Learning 💡
-
-I'm certified in:
-- Machine Learning Specialization (Stanford & DeepLearning.AI)
-- Neural Networks & CNNs (DeepLearning.AI)
-- VLSI Design Flow: RTL to GDS (NPTEL) & C-based VLSI Design(NPTEL)
-- Minor Degree in Internet of Things (IoT)
-
----
-
-## Beyond the Code 🎵 
-
-When I'm not designing circuits or training models, I'm:
-- a stage-performer, as a trained Carnatic vocalist, and an orator cum emcee 🎤 
-- Exploring and learning possible innovations in the world of Semiconductor and AI 🔧 
-- Exploring food, culture, and lifestyle around the world 🌍 
-
----
-
-## Let's Connect
----
-<style
-  
-  .socials img {
-  filter: grayscale(1);
-  transition: 0.3s;
-  }
-  .socials img:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  } 
-  
-</style>
-
-I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
-
-<p align="center">
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" />
-  </a>
+<section>
+  <div class="card">
+    <h2>Let’s Connect</h2>
+    <p>
+      I’m always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
+    </p>
+    <p align="center" class="socials">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" alt="LinkedIn" />
+      </a>
 
   <!-- GitHub -->
   <a href="https://github.com/kirthana1181">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
   </a>
 
   <!-- Email -->
   <a href="mailto:work.kirthana@email.com">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" />
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
   </a>
 </p>
-<!--
-<a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
-  <img src="https://img.icons8.com/ios-filled/50/0A66C2/linkedin.png"/>
-</a>
-<a href="https://github.com/kirthana1181">
-  <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png"/>
-</a>
-<a href="mailto:work.kirthana@gmail.com">
-  <img src="https://img.icons8.com/ios-filled/50/D44638/email.png"/>
-</a>
--->
+  </div>
+</section>
 
-<!--[Get in Touch](/contact)-->
-
----
-
-## Open to Opportunities
-
-Currently seeking **internships** and **research positions** in:
-- VLSI Design & Verification
-- AI Hardware Acceleration
-- FPGA Development
-- Embedded Systems Engineering
-
----
-
-*"Designing tomorrow's intelligent systems."*
+<section>
+  <div class="card">
+    <h2>Open to Opportunities</h2>
+    <p>Currently seeking <strong>internships</strong> and <strong>research positions</strong> in:</p>
+    <ul>
+      <li>VLSI Design &amp; Verification.</li>
+      <li>AI Hardware Acceleration.</li>
+      <li>FPGA Development.</li>
+      <li>Embedded Systems Engineering.</li>
+    </ul>
+    <p><em>“Designing tomorrow’s intelligent systems.”</em></p>
+  </div>
+</section>
