@@ -72,7 +72,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Hero layout */
+/* HERO LAYOUT: text + photo side by side */
 .profile-container {
   display: flex;
   flex-wrap: wrap;
@@ -85,9 +85,14 @@ a:hover {
   flex: 1 1 280px;
 }
 
+.profile-image {
+  flex: 0 0 auto;
+}
+
 .profile-image img {
   max-width: 260px;
   border-radius: 14px;
+  display: block;
 }
 
 /* Reusable list styling inside cards */
@@ -105,6 +110,7 @@ a:hover {
   filter: grayscale(1);
   transition: 0.3s;
 }
+
 .socials img:hover {
   filter: grayscale(0);
   transform: scale(1.1);
@@ -131,6 +137,7 @@ a:hover {
     </div>
 
     <div class="profile-image">
+      <!-- Update the src path to your actual image if different -->
       <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
     </div>
   </div>
@@ -219,16 +226,16 @@ a:hover {
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" alt="LinkedIn" />
       </a>
 
-  <!-- GitHub -->
-  <a href="https://github.com/kirthana1181">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
-  </a>
+      <!-- GitHub -->
+      <a href="https://github.com/kirthana1181">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
+      </a>
 
-  <!-- Email -->
-  <a href="mailto:work.kirthana@email.com">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
-  </a>
-</p>
+      <!-- Email -->
+      <a href="mailto:work.kirthana@email.com">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
+      </a>
+    </p>
   </div>
 </section>
 
