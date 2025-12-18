@@ -11,11 +11,6 @@ layout: home
   <a href="/projects">Projects</a>
   <a href="/skills">Skills</a>
 </div>
-<!-- |
-  <a href="/experience" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Experience</a> |
--->
-<!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
-<!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
 
 ---
 
@@ -115,11 +110,6 @@ a:hover {
   filter: grayscale(0);
   transform: scale(1.1);
 }
-
-@media (prefers-color-scheme: dark) {
-  body { background:#0f172a; color:#e5e7eb; }
-  .card { background:#020617; }
-}
 </style>
 
 ---
@@ -137,7 +127,6 @@ a:hover {
     </div>
 
     <div class="profile-image">
-      <!-- Update the src path to your actual image if different -->
       <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
     </div>
   </div>
@@ -221,17 +210,12 @@ a:hover {
       I’m always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
     </p>
     <p align="center" class="socials">
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" alt="LinkedIn" />
       </a>
-
-      <!-- GitHub -->
       <a href="https://github.com/kirthana1181">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
       </a>
-
-      <!-- Email -->
       <a href="mailto:work.kirthana@email.com">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
       </a>
