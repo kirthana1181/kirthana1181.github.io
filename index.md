@@ -1,10 +1,16 @@
 ---
   layout: home
 ---
-
-<div style="text-align: center; margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 10px;">
-  <a href="/projects" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Projects</a> |
-  <a href="/skills" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Skills</a> <!-- |
+<div style = "
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  margin:2rem 0;
+  font-weight:600;">
+  <a href="/projects">Projects</a>
+  <a href="/skills">Skills</a>
+  <a href="/experience">Experience</a>
+</div> <!-- |
   <a href="/experience" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Experience</a> |  -->
   <!--<a href="/about" style="margin: 0 1rem; color: #667eea; font-weight: 500;">About</a> |  -->
   <!--<a href="/contact" style="margin: 0 1rem; color: #667eea; font-weight: 500;">Contact</a> -->
@@ -13,66 +19,99 @@
 ---
 
 <style>
-.profile-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 2rem;
+:root {
+  --primary: #4f46e5;
+  --secondary: #6366f1;
+  --accent: #22c55e;
+  --bg: #f9fafb;
+  --text: #111827;
+  --muted: #6b7280;
+  --card: #ffffff;
 }
 
-.profile-text {
-  flex: 1;
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
 }
 
-.profile-image {
-  flex-shrink: 0;
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.profile-image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #0066cc;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+h1 {
+  font-size: 2.6rem;
 }
 
-@media (max-width: 768px) {
-  .profile-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .profile-image img {
-    width: 150px;
-    height: 150px;
-  }
+h2 {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+section {
+  margin: 4rem 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #eef2ff;
+  color: var(--primary);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin: 0.2rem;
 }
 </style>
 
+<section class="card">
 <div class="profile-container">
   <div class="profile-text">
-    <h1>Hi, welcome to my portfolio!</h1>
-    <h2>Electronics & Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
-    <p>I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. As a tech enthusiast, I explore current innovations in the industry and research their engineering methodology(s). I love to practically apply my knowledge in building efficient real-world solutions.</p>
+    <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
+    <h1>Hi, I'm Kirthana</h1>
+    <h2>Electronics & Communication Engineer</h2>
+    <p>
+      B.Tech student at <strong>IIITDM Kurnool</strong>, working at the
+      intersection of <strong>VLSI Design</strong>,
+      <strong>AI-ML</strong>, and <strong>Embedded Systems</strong>.
+      Passionate about building intelligent, efficient hardware-software systems.
+    </p>
   </div>
-  
+
   <div class="profile-image">
     <img src="/assets/images/profile.jpg" alt="">
   </div>
 </div>
+</section>
 
 ---
 
-## What I Do
-
-I specialize in:
-
-**Hardware Design** - Creating optimized digital systems from RTL to silicon, with expertise in FPGA prototyping and RISC-V architecture
-
-**AI-ML Integration** - Developing machine learning models for autonomous systems and exploring hardware acceleration techniques
-
-**Embedded Systems** - Building IoT solutions and embedded applications that bridge software intelligence with hardware efficiency
+<section>
+  <div class="card">
+    <h2>What I Do</h2>
+    <p><strong>Hardware Design</strong> – Creating optimized digital systems from RTL to silicon, with expertise in FPGA prototyping and RISC-V architecture</p>
+    <p><strong>AI-ML Integration</strong> – Developing machine learning models for autonomous systems and exploring hardware acceleration techniques</p>
+    <p><strong>Embedded Systems</strong> – Building IoT solutions and embedded applications that bridge software intelligence with hardware efficiency</p>
+  </div>
+</section>
 
 ---
 
