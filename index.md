@@ -6,7 +6,7 @@ layout: home
   display:flex;
   justify-content:center;
   gap:2rem;
-  margin:2rem 0;
+  margin:1rem 0;
   font-weight:600;">
   <a href="/projects">Projects</a>
   <a href="/skills">Skills</a>
