@@ -22,7 +22,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -47,19 +47,40 @@
             opacity: 0.9;
         }
 
-        /* Top Section with Stats and Research Intern */
-        .top-section {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
             padding: 2rem;
             background: #f8f9fa;
         }
 
+        .filter-btn {
+            padding: 0.6rem 1.5rem;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
         .stats-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
+            padding: 2rem;
+            background: #f8f9fa;
         }
 
         .stat-card {
@@ -80,71 +101,6 @@
         .stat-label {
             color: #666;
             font-size: 0.9rem;
-        }
-
-        /* Research Intern Card - Right Side */
-        .research-intern-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            border: 2px solid #667eea;
-        }
-
-        .research-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.2rem;
-        }
-
-        .research-header h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .research-date {
-            font-size: 0.85rem;
-            opacity: 0.9;
-        }
-
-        .research-body {
-            padding: 1.2rem;
-        }
-
-        .research-description {
-            color: #555;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-            font-size: 0.9rem;
-        }
-
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding: 2rem;
-            background: #f8f9fa;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .filter-btn {
-            padding: 0.6rem 1.5rem;
-            border: 2px solid #667eea;
-            background: white;
-            color: #667eea;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .filter-btn:hover, .filter-btn.active {
-            background: #667eea;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
         .projects-grid {
@@ -246,16 +202,6 @@
             font-size: 1.1rem;
         }
 
-        @media (max-width: 1024px) {
-            .top-section {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-section {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -269,14 +215,6 @@
             .filter-buttons {
                 padding: 1rem;
             }
-
-            .stats-section {
-                grid-template-columns: 1fr;
-            }
-
-            .top-section {
-                padding: 1rem;
-            }
         }
     </style>
 </head>
@@ -287,44 +225,22 @@
             <p>Building innovative solutions at the intersection of hardware and software</p>
         </div>
 
-        <!-- Top Section: Stats on Left, Research Intern on Right -->
-        <div class="top-section">
-            <div class="stats-section">
-                <div class="stat-card">
-                    <div class="stat-number">6+</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Research Internships</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">16%</div>
-                    <div class="stat-label">Avg Performance Gain</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Technologies Mastered</div>
-                </div>
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Projects Completed</div>
             </div>
-
-            <!-- Research Intern Card on Right -->
-            <div class="research-intern-card">
-                <div class="research-header">
-                    <h3>Research Intern at TiHAN - IIT Hyderabad</h3>
-                    <div class="research-date">June 2024 - July 2024 | IIT Hyderabad</div>
-                </div>
-                <div class="research-body">
-                    <p class="research-description">
-                        Worked on developing and training a Machine Learning Model for an ADAS-based Project, achieving over 94% accuracy. Also worked as a Project Intern on Network Handover between Cellular Networks (4G LTE) and Wi-Fi Network, using Bash and OpenAir Interface in Unix CLI.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Communication Protocols</span>
-                        <span class="tech-tag">Network Handover</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">ADAS</span>
-                    </div>
-                </div>
+            <div class="stat-card">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Research Internships</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10%</div>
+                <div class="stat-label">Avg Performance Gain</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Technologies Mastered</div>
             </div>
         </div>
 
@@ -333,6 +249,7 @@
             <button class="filter-btn" data-filter="vlsi">VLSI Design</button>
             <button class="filter-btn" data-filter="ml">Machine Learning</button>
             <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+            <button class="filter-btn" data-filter="research">Research</button>
         </div>
 
         <div class="projects-grid" id="projectsGrid">
@@ -392,7 +309,27 @@
                 </div>
             </div>
 
-            <!-- Project 4: Line-Following Robot -->
+            <!-- Project 4: Research Intern at TiHAN -->
+            <div class="project-card" data-category="research ml">
+                <div class="project-header">
+                    <h3>Research Intern at TiHAN - IIT Hyderabad</h3>
+                    <div class="project-date">June 2024 - July 2024 | IIT Hyderabad</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Worked on developing and training a Machine Learning Model for an ADAS-based Project, achieving over 94% accuracy. Also worked as a Project Intern on Network Handover between Cellular Networks (4G LTE) and Wi-Fi Network, using Bash and OpenAir Interface in Unix CLI.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Communication Protocols</span>
+                        <span class="tech-tag">Network Handover</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">ADAS</span>
+                        <span class="tech-tag">Bash</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Line-Following Robot -->
             <div class="project-card" data-category="embedded">
                 <div class="project-header">
                     <h3>Line-Following Robot</h3>
@@ -411,7 +348,7 @@
                 </div>
             </div>
 
-            <!-- Project 5: FPGA Digital Systems -->
+            <!-- Project 6: FPGA Digital Systems -->
             <div class="project-card" data-category="vlsi">
                 <div class="project-header">
                     <h3>Digital Systems Prototyping</h3>
