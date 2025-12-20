@@ -32,15 +32,6 @@ body {
   line-height: 1.7;
 }
 
-/* Reduce overall container width for regular cards */
-.wrapper, .container {
-  max-width: 900px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-
 h1, h2, h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -56,8 +47,14 @@ h2 {
   color: var(--secondary);
 }
 
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 section {
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
 }
 
 a {
@@ -69,20 +66,36 @@ a:hover {
   text-decoration: underline;
 }
 
+/* REGULAR CARDS - Narrower for readability */
 .card {
   background: var(--card);
   padding: 2rem;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
+  max-width: 850px;
 }
 
-/* Make HERO CARD bigger */
-section:first-of-type .card {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3rem;
+/* HERO CARD - MUCH WIDER to stand out */
+.hero-card {
+  background: var(--card);
+  padding: 3.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  margin: 0 auto 2rem auto;
+  max-width: 1200px;
+  border: 2px solid var(--primary);
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* HERO LAYOUT: photo floats beside heading */
@@ -96,13 +109,13 @@ section:first-of-type .card {
 
 .profile-image {
   float: right;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .profile-image img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--primary);
@@ -117,16 +130,26 @@ section:first-of-type .card {
 }
 
 /* Reusable list styling inside cards */
-.card ul {
-  margin: 0;
-  padding-left: 1.2rem;
+.card ul, .hero-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
 }
 
-.card li {
-  margin-bottom: 0.3rem;
+.card li, .hero-card li {
+  margin-bottom: 0.5rem;
 }
 
 /* Social icons */
+.socials {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
 .socials img {
   filter: grayscale(1);
   transition: 0.3s;
@@ -137,20 +160,18 @@ section:first-of-type .card {
   transform: scale(1.1);
 }
 
-/* Badge styling */
-.badge {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .hero-card {
+    padding: 2rem;
+    max-width: 100%;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  
   .profile-image {
     float: none;
     margin: 0 auto 1.5rem auto;
@@ -166,34 +187,27 @@ section:first-of-type .card {
   h1 {
     font-size: 2rem;
   }
-  
-  .wrapper, .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-  
-  .card {
-    padding: 1.5rem;
-  }
 }
 </style>
 
 ---
 
-<section class="card">
-  <div class="profile-container">
-    <div class="profile-image">
-      <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
-    </div>
-    
-    <div class="profile-text">
-      <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
-      <h1>Hi, I'm Kirthana</h1>
-      <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
-      <p>
-        I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
-        <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
-      </p>
+<section>
+  <div class="hero-card">
+    <div class="profile-container">
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+      </div>
+      
+      <div class="profile-text">
+        <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
+        <h1>Hi, I'm Kirthana</h1>
+        <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
+        <p>
+          I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
+          <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -275,7 +289,7 @@ section:first-of-type .card {
     <p>
       I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
     </p>
-    <p align="center" class="socials">
+    <p class="socials">
       <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" alt="LinkedIn" />
       </a>
