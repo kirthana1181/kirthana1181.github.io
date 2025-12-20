@@ -32,6 +32,15 @@ body {
   line-height: 1.7;
 }
 
+/* Reduce overall container width */
+.wrapper, .container {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
 h1, h2, h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -39,6 +48,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.6rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -47,7 +57,7 @@ h2 {
 }
 
 section {
-  margin: 4rem 0;
+  margin: 2.5rem 0;
 }
 
 a {
@@ -61,33 +71,41 @@ a:hover {
 
 .card {
   background: var(--card);
-  padding: 1.8rem;
+  padding: 2rem;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
 }
 
-/* HERO LAYOUT: text + photo side by side */
+/* HERO LAYOUT: photo floats beside heading */
 .profile-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
 .profile-text {
-  flex: 1 1 280px;
+  margin-right: 0;
 }
 
 .profile-image {
-  flex: 0 0 auto;
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .profile-image img {
-  max-width: 260px;
-  border-radius: 14px;
-  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* Clear float after hero section */
+.profile-container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Reusable list styling inside cards */
@@ -110,12 +128,56 @@ a:hover {
   filter: grayscale(0);
   transform: scale(1.1);
 }
+
+/* Badge styling */
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .profile-image {
+    float: none;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .wrapper, .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+}
 </style>
 
 ---
 
 <section class="card">
   <div class="profile-container">
+    <div class="profile-image">
+      <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+    </div>
+    
     <div class="profile-text">
       <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
       <h1>Hi, I'm Kirthana</h1>
@@ -124,10 +186,6 @@ a:hover {
         I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
         <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
       </p>
-    </div>
-
-    <div class="profile-image">
-      <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
     </div>
   </div>
 </section>
@@ -182,7 +240,7 @@ a:hover {
 <section>
   <div class="card">
     <h2>Continuous Learning 💡</h2>
-    <p>I’m certified in:</p>
+    <p>I'm certified in:</p>
     <ul>
       <li>Machine Learning Specialization (Stanford &amp; DeepLearning.AI).</li>
       <li>Neural Networks &amp; CNNs (DeepLearning.AI).</li>
@@ -205,9 +263,9 @@ a:hover {
 
 <section>
   <div class="card">
-    <h2>Let’s Connect</h2>
+    <h2>Let's Connect</h2>
     <p>
-      I’m always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
+      I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
     </p>
     <p align="center" class="socials">
       <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
@@ -216,7 +274,7 @@ a:hover {
       <a href="https://github.com/kirthana1181">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
       </a>
-      <a href="mailto:work.kirthana@email.com">
+      <a href="mailto:work.kirthana@gmail.com">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
       </a>
     </p>
@@ -233,6 +291,6 @@ a:hover {
       <li>FPGA Development.</li>
       <li>Embedded Systems Engineering.</li>
     </ul>
-    <p><em>“Designing tomorrow’s intelligent systems.”</em></p>
+    <p><em>"Designing tomorrow's intelligent systems."</em></p>
   </div>
 </section>
