@@ -32,7 +32,7 @@ body {
   line-height: 1.7;
 }
 
-/* Reduce overall container width */
+/* Reduce overall container width for regular cards */
 .wrapper, .container {
   max-width: 900px !important;
   margin-left: auto !important;
@@ -75,6 +75,14 @@ a:hover {
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
+}
+
+/* Make HERO CARD bigger */
+section:first-of-type .card {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
 }
 
 /* HERO LAYOUT: photo floats beside heading */
