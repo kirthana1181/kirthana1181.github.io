@@ -128,7 +128,7 @@ a:hover {
 }
 
 /* Desktop: Image and text side by side */
-@media (min-width: 900px) {
+ {
   .profile-container {
     flex-direction: row;
     text-align: left;
