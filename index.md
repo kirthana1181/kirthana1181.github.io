@@ -98,7 +98,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* HERO LAYOUT: Centered image on all screens */
+/* HERO LAYOUT: Image centered ABOVE text */
 .profile-container {
   display: flex;
   flex-direction: column;
@@ -109,13 +109,13 @@ a:hover {
 
 .profile-text {
   width: 100%;
+  max-width: 900px;
 }
 
 .profile-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto 1rem auto;
 }
 
 .profile-image img {
@@ -125,26 +125,8 @@ a:hover {
   object-fit: cover;
   border: 4px solid var(--primary);
   box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
-}
-
-/* Desktop: Image and text side by side */
- {
-  .profile-container {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .profile-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-  
-  .profile-image {
-    flex-shrink: 0;
-    margin: 0;
-  }
+  display: block;
+  margin: 0 auto;
 }
 
 /* Reusable list styling inside cards */
@@ -210,18 +192,20 @@ a:hover {
 <section>
   <div class="hero-card">
     <div class="profile-container">
-      <div class="profile-text">
-        <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
-        <h1>Hi, I'm Kirthana</h1>
-        <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
-        <p>
-          I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
-          <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
-        </p>
+      <!-- IMAGE FIRST - centered at top -->
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
       </div>
       
-  <div class="profile-image">
-    <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+  <!-- TEXT BELOW - centered -->
+  <div class="profile-text">
+    <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
+    <h1>Hi, I'm Kirthana</h1>
+    <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
+    <p>
+      I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
+      <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
+    </p>
   </div>
 </div>
   </div>
