@@ -98,19 +98,24 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* HERO LAYOUT: photo floats beside heading */
+/* HERO LAYOUT: Centered image on all screens */
 .profile-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 .profile-text {
-  margin-right: 0;
+  width: 100%;
 }
 
 .profile-image {
-  float: right;
-  margin-left: 2.5rem;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .profile-image img {
@@ -122,11 +127,24 @@ a:hover {
   box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
 }
 
-/* Clear float after hero section */
-.profile-container::after {
-  content: "";
-  display: table;
-  clear: both;
+/* Desktop: Image and text side by side */
+@media (min-width: 900px) {
+  .profile-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .profile-image {
+    flex-shrink: 0;
+    margin: 0;
+  }
 }
 
 /* Reusable list styling inside cards */
@@ -172,13 +190,6 @@ a:hover {
     max-width: 100%;
   }
   
-  .profile-image {
-    float: none;
-    margin: 0 auto 1.5rem auto;
-    display: block;
-    text-align: center;
-  }
-  
   .profile-image img {
     width: 150px;
     height: 150px;
@@ -186,6 +197,10 @@ a:hover {
   
   h1 {
     font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
   }
 }
 </style>
@@ -195,10 +210,6 @@ a:hover {
 <section>
   <div class="hero-card">
     <div class="profile-container">
-      <div class="profile-image">
-        <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
-      </div>
-      
       <div class="profile-text">
         <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
         <h1>Hi, I'm Kirthana</h1>
@@ -208,7 +219,11 @@ a:hover {
           <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
         </p>
       </div>
-    </div>
+      
+  <div class="profile-image">
+    <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+  </div>
+</div>
   </div>
 </section>
 
