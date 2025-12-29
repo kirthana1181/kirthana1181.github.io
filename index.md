@@ -203,8 +203,7 @@ a:hover {
     <h1>Hi, I'm Kirthana</h1>
     <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
     <p>
-      I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about designing intelligent hardware systems, while working at the intersection of
-      <strong>VLSI</strong> and <strong>Machine Learning</strong> as well as <strong>Embedded Systems</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
+      I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about <strong>VLSI</strong>, <strong>Embedded Systems</strong> and the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
     </p>
   </div>
 </div>
