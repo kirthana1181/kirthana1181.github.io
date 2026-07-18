@@ -1,414 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills & Tools - Kirthana P Rao</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    :root{
-      --primary:#4f46e5;
-      --secondary:#6366f1;
-      --bg:#f8fafc;
-      --card:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --border:#e5e7eb;
-    }
-    body{
-      font-family:"Inter","Segoe UI",sans-serif;
-      line-height:1.6;
-      color:var(--text);
-      background:var(--bg);
-      padding:16px;
-      max-width:1120px;
-      margin:0 auto;
-    }
-    h1,h2,h3{
-      letter-spacing:-0.02em;
-      font-weight:800;
-    }
-    h1{
-      text-align:center;
-      margin:1.2rem 0 1.4rem;
-      font-size:2.1rem;
-    }
-    h2{
-      color:var(--primary);
-      margin:0 0 .85rem;
-      font-size:1.28rem;
-    }
-    h3{
-      margin:0 0 .55rem;
-      font-size:1.02rem;
-    }
-    .nav{
-      text-align:center;
-      margin:1rem 0 1.4rem;
-      padding:.8rem 1rem;
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:14px;
-    }
-    .nav a{
-      display:inline-block;
-      padding:.55rem 1rem;
-      background:linear-gradient(135deg,var(--primary),var(--secondary));
-      color:#fff;
-      text-decoration:none;
-      border-radius:999px;
-      font-weight:600;
-    }
-    .section{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:16px;
-      padding:1.15rem 1.2rem;
-      margin:0 0 1rem;
-      box-shadow:0 10px 24px rgba(15,23,42,.05);
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:.85rem;
-    }
-    .skill-card,.board-card,.cert-card{
-      background:#f9fafb;
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:1rem 1rem .95rem;
-    }
-    .skill-tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:.45rem;
-      margin-top:.5rem;
-    }
-    .skill-tag{
-      display:inline-flex;
-      align-items:center;
-      gap:.35rem;
-      background:#fff;
-      padding:.34rem .68rem;
-      border-radius:999px;
-      font-size:.88rem;
-      border:1px solid var(--border);
-      white-space:nowrap;
-    }
-    .icon{
-      width:16px;
-      height:16px;
-      vertical-align:middle;
-    }
-    .muted{
-      color:var(--muted);
-    }
-    .cert-list{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:.75rem;
-    }
-    .cert-card{
-      font-size:.94rem;
-      line-height:1.45;
-    }
-    .cert-card.silver{
-      background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 100%);
-    }
-    .proficiency-list{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:.75rem;
-    }
-    .proficiency-item{
-      background:#f9fafb;
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:1rem;
-    }
-    .proficiency-header{
-      display:flex;
-      justify-content:space-between;
-      gap:.5rem;
-      font-weight:700;
-      margin-bottom:.45rem;
-    }
-    .proficiency-bar{
-      height:8px;
-      background:#e5e7eb;
-      border-radius:999px;
-      overflow:hidden;
-      margin-bottom:.55rem;
-    }
-    .proficiency-fill{
-      height:100%;
-      background:linear-gradient(90deg,var(--primary),#22c55e);
-    }
-    .footer{
-      text-align:center;
-      padding:1.1rem 0 .5rem;
-      color:var(--muted);
-      font-size:.92rem;
-    }
-    .top-links{
-      display:flex;
-      flex-wrap:wrap;
-      gap:.5rem;
-      margin-top:.7rem;
-    }
-    .link-pill{
-      display:inline-flex;
-      align-items:center;
-      gap:.35rem;
-      padding:.38rem .7rem;
-      border:1px solid var(--border);
-      border-radius:999px;
-      background:#fff;
-      font-size:.9rem;
-      color:#374151;
-    }
-    @media (max-width:768px){
-      body{padding:10px}
-      h1{font-size:1.7rem}
-      .section{padding:1rem}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Tools - Kirthana P Rao</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .nav {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 2rem 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #0066cc;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+            align-items: flex-start;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 100%;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #fff;
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .skill-tag:hover {
+            background: #0066cc;
+            color: white;
+            border-color: #0066cc;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+        }
+
+        .cert-section {
+            background: #f8f9fa;
+            padding: 2rem 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .cert-section h3 {
+            margin-top: 1rem;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .cert-badge:hover {
+            transform: translateX(5px);
+        }
+
+        .cert-badge.silver {
+            background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+        }
+
+        .proficiency-section {
+            margin: 2rem 0;
+        }
+
+        .proficiency-item {
+            margin: 1.25rem 0;
+        }
+
+        .proficiency-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+
+        .proficiency-bar {
+            background: #e0e0e0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .proficiency-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #0066cc, #00cc66);
+            transition: width 1s ease;
+            animation: fillBar 1.5s ease-out;
+        }
+
+        @keyframes fillBar {
+            from { width: 0; }
+        }
+
+        .boards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+        }
+
+        .board-card {
+            background: #f8f9fa;
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .board-card h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .board-card p {
+            line-height: 1.5;
+        }
+
+        .board-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            color: #666;
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .skills-grid,
+            .cert-grid,
+            .boards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-category,
+            .board-card {
+                padding: 1rem 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Skills &amp; Tools</h1>
+    <h1> Skills & Tools </h1>
 
-  <div class="nav">
-    <a href="index.html">Back to Home</a>
-  </div>
-
-  <section class="section">
-    <h2>Hardware Description Languages</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>HDL Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/v/5C85D6" class="icon" alt="Verilog">Verilog</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/v/5C85D6" class="icon" alt="TL-Verilog">TL-Verilog</span>
+    <!-- HDL Skills -->
+    <h2> Hardware Description Languages</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>HDL Languages</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/v/5C85D6" class="icon" alt="Verilog">
+                    Verilog
+                </span>
+                <span class="skill-tag"><img src="https://cdn.simpleicons.org/v/5C85D6" class="icon" alt="TL-Verilog">TL-Verilog</span>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Programming Languages</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>Core Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/python/3776AB" class="icon" alt="Python">Python</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/c/A8B9CC" class="icon" alt="C">C</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/cplusplus/00599C" class="icon" alt="C++">C++</span>
+    <!-- Programming Languages -->
+    <h2> Programming Languages</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Core Languages</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/python/3776AB" class="icon" alt="Python">
+                    Python
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/c/A8B9CC" class="icon" alt="C">
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/cplusplus/00599C" class="icon">
+                    <!-- C++ -->
+                </span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>Web &amp; Scripting</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/html5/E34F26" class="icon" alt="HTML5">HTML5</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/gnubash/4EAA25" class="icon" alt="Bash">Bash</span>
-          <span class="skill-tag">Tcl</span>
+        <div class="skill-category">
+            <h3>Web & Scripting</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/html5/E34F26" class="icon" alt="HTML5">
+                    HTML5
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/gnubash/4EAA25" class="icon" alt="Bash">
+                    Bash
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/python/3776AB" class="icon" alt="Python">
+                    Python
+                </span>
+                <span class="skill-tag">Tcl</span>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Tools &amp; Software</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>Development</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" class="icon" alt="VS Code">VS Code</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/git/F05032" class="icon" alt="Git">Git</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/github/181717" class="icon" alt="GitHub">GitHub</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/jupyter/F37626" class="icon" alt="Jupyter">Jupyter</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/pycharm/F37626" class="icon" alt="PyCharm">PyCharm</span>
+    <!-- Tools & Software -->
+    <h2> Tools & Software</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Development Environment</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" class="icon" alt="Visual Studio Code">
+                    VS Code
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/git/F05032" class="icon" alt="Git">
+                    Git
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/github/181717" class="icon" alt="GitHub">
+                    GitHub
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/jupyter/F37626" class="icon" alt="Jupyter">
+                    Jupyter Notebook
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/pycharm/F37626" class="icon" alt="Pycharm">
+                    PyCharm
+                </span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>FPGA &amp; Digital Design</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Xilinx Vivado</span>
-          <span class="skill-tag">GTKWave</span>
-          <span class="skill-tag">ModelSim</span>
+        <div class="skill-category">
+            <h3>FPGA & Digital Design</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Xilinx Vivado</span> 
+                <span class="skill-tag">GTKWave</span>
+                <span class="skill-tag">ModelSim</span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>ASIC Flow</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">OpenLANE</span>
-          <span class="skill-tag">OpenSTA</span>
-          <span class="skill-tag">Magic</span>
-          <span class="skill-tag">Yosys</span>
+        <div class="skill-category">
+            <h3>ASIC Design Flow</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">OpenLANE</span>
+                <span class="skill-tag">OpenSTA</span>
+                <span class="skill-tag">Magic</span>
+                <span class="skill-tag">Yosys </span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>Physical Design</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Innovus</span>
-          <span class="skill-tag">Genus</span>
+        <div class="skill-category">
+            <h3>Physical Design</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Innovus</span>
+                <span class="skill-tag">Genus</span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>Circuit Design</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Virtuoso</span>
-          <span class="skill-tag">LTSpice</span>
+        <div class="skill-category">
+            <h3>Circuit Design</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Virtuoso</span>
+                <span class="skill-tag">LTSpice</span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>PCB Design</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/kicad/314CB0" class="icon" alt="KiCad">KiCad</span>
-          <span class="skill-tag">Eagle</span>
-          <span class="skill-tag">Altium</span>
+        <div class="skill-category">
+            <h3>PCB Design</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/kicad/314CB0" class="icon" alt="KiCAD">
+                </span>
+                <span class="skill-tag">Eagle</span>
+                <span class="skill-tag">Altium</span>
+            </div>
         </div>
-      </div>
 
-      <div class="skill-card">
-        <h3>Simulation</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">MATLAB</span>
-          <span class="skill-tag">Simulink</span>
-          <span class="skill-tag">Icarus Verilog</span>
+        <div class="skill-category">
+            <h3>Simulation</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Simulink</span>
+                <span class="skill-tag">Icarus Verilog</span>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Development Boards &amp; Hardware</h2>
-    <div class="grid">
-      <div class="board-card">
-        <h3>Microcontrollers</h3>
-        <p><img src="https://cdn.simpleicons.org/arduino/00979D" class="icon" alt="Arduino"> Arduino</p>
-        <p class="muted">ESP32 • ESP8266 • STM32 • LPC-2148</p>
-      </div>
-      <div class="board-card">
-        <h3>FPGA Boards</h3>
-        <p>Xilinx Artix-7</p>
-        <p class="muted">Xilinx Arty-7</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Architectures &amp; Protocols</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>Processor Architectures</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/riscv/283272" class="icon" alt="RISC-V">RISC-V</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/arm/0091BD" class="icon" alt="ARM">Cortex</span>
+    <!-- Development Boards -->
+    <h2>Development Boards & Hardware</h2>
+    <div class="boards-grid">
+        <div class="board-card">
+            <h4>Microcontrollers</h4>
+            <p>
+                <img src="https://cdn.simpleicons.org/arduino/00979D" class="icon" alt="Arduino">
+                Arduino<br>
+                ESP32 • ESP8266<br>
+                STM32 • LPC-2148
+            </p>
         </div>
-      </div>
-      <div class="skill-card">
-        <h3>Communication Protocols</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">AXI4</span>
-          <span class="skill-tag">I2C</span>
-          <span class="skill-tag">SPI</span>
-          <span class="skill-tag">UART</span>
-          <span class="skill-tag">USB</span>
+        <div class="board-card">
+            <h4>FPGA Boards</h4>
+            <p>
+                Xilinx Artix-7<br>
+                Xilinx Arty-7<br>
+            </p>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>AI/ML &amp; Data Science</h2>
-    <div class="grid">
-      <div class="skill-card">
-        <h3>Frameworks</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" class="icon" alt="TensorFlow">TensorFlow 2</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/keras/D00000" class="icon" alt="Keras">Keras</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="icon" alt="Scikit-learn">Scikit-learn</span>
+    <!-- Architectures & Protocols -->
+    <h2> Architectures & Protocols</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Processor Architectures</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/riscv/283272" class="icon" alt="RISC-V">
+                    <!--RISC-V-->
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/arm/0091BD" class="icon" alt="ARM">
+                    Cortex
+                </span>
+            </div>
         </div>
-      </div>
-      <div class="skill-card">
-        <h3>Libraries</h3>
-        <div class="skill-tags">
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/numpy/013243" class="icon" alt="NumPy">NumPy</span>
-          <span class="skill-tag"><img src="https://cdn.simpleicons.org/pandas/150458" class="icon" alt="Pandas">Pandas</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
+
+        <div class="skill-category">
+            <h3>Communication Protocols</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">AXI4</span>
+                <span class="skill-tag">I2C</span>
+                <span class="skill-tag">SPI</span>
+                <span class="skill-tag">UART</span>
+                <span class="skill-tag">USB</span>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Certifications</h2>
-    <div class="cert-list">
-      <div class="cert-card">
-        <h3>Machine Learning</h3>
-        <p>Machine Learning Specialization — Stanford &amp; DeepLearning.AI</p>
-        <p>Neural Networks and CNNs — DeepLearning.AI</p>
-        <p>Deep Learning Specialization — DeepLearning.AI</p>
-      </div>
-      <div class="cert-card">
-        <h3>VLSI &amp; Hardware Design</h3>
-        <p>VLSI Design Flow: RTL to GDS — NPTEL (IIIT Delhi)</p>
-        <p>Digital Design with Verilog — NPTEL (IIT Guwahati)</p>
-        <p>C-Based VLSI Design — NPTEL (IIT Guwahati)</p>
-        <p>Digital VLSI SoC Design &amp; RISC-V MYTH — Nasscom &amp; VSD</p>
-      </div>
-      <div class="cert-card">
-        <h3>IoT &amp; Recognition</h3>
-        <p>Minor Degree in IoT — IIITDM Kurnool</p>
-        <p class="silver">Introduction to Industry 4.0 &amp; IIoT — NPTEL (Silver Medal)</p>
-        <p>ISWDP Samsung Student Fellowship Recipient</p>
-        <p>Top 0.1% in CBSE Computer Science Boards</p>
-        <p>DVCon India Design Contest 2025 — Stage 1 Shortlisted</p>
-      </div>
+    <!-- AI/ML -->
+    <h2> AI/ML & Data Science</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Frameworks</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" class="icon" alt="TensorFlow">
+                    TensorFlow 2
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/keras/D00000" class="icon" alt="Keras">
+                    Keras
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="icon" alt="Scikit-learn">
+                    Scikit-learn
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Libraries</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/numpy/013243" class="icon" alt="NumPy">
+                    NumPy
+                </span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/pandas/150458" class="icon" alt="Pandas">
+                    Pandas
+                </span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">
+                    <img src="https://cdn.simpleicons.org/opencv/5C3EE8" class="icon" alt="Seaborn">
+                    Seaborn
+                </span>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <section class="section">
-    <h2>Skill Snapshot</h2>
-    <div class="proficiency-list">
-      <div class="proficiency-item">
-        <div class="proficiency-header"><span>Expert</span><span>100%</span></div>
-        <div class="proficiency-bar"><div class="proficiency-fill" style="width:100%"></div></div>
-        <p class="muted">Verilog, C, Python, RTL Design, TensorFlow, Digital Design, Static Timing Analysis</p>
-      </div>
-      <div class="proficiency-item">
-        <div class="proficiency-header"><span>Advanced</span><span>80%</span></div>
-        <div class="proficiency-bar"><div class="proficiency-fill" style="width:80%"></div></div>
-        <p class="muted">ASIC Design, PCB Design, MATLAB, C++, OOP, Embedded Systems, HLS Programming, IoT</p>
-      </div>
-      <div class="proficiency-item">
-        <div class="proficiency-header"><span>Intermediate</span><span>60%</span></div>
-        <div class="proficiency-bar"><div class="proficiency-fill" style="width:60%"></div></div>
-        <p class="muted">MATLAB Programming, Web Development, Simulink, CAN, RTOS</p>
-      </div>
-      <div class="proficiency-item">
-        <div class="proficiency-header"><span>Learning</span><span>40%</span></div>
-        <div class="proficiency-bar"><div class="proficiency-fill" style="width:40%"></div></div>
-        <p class="muted">RTL Verification, DFT, UVM, SystemVerilog</p>
-      </div>
+    <!-- Certifications -->
+    <h2> Certifications</h2>
+    <div class="cert-section">
+        <h3>🧠 Machine Learning</h3>
+        <div class="cert-grid">
+            <div class="cert-badge">Machine Learning Specialization - Stanford & DeepLearning.AI</div>
+            <div class="cert-badge">Neural Networks and CNNs - DeepLearning.AI</div>
+            <div class="cert-badge">Deep Learning Specialization - DeepLearning.AI</div>
+        </div>
+
+        <h3 style="margin-top: 2rem;"> VLSI & Hardware Design</h3>
+        <div class="cert-grid">
+            <div class="cert-badge">VLSI Design Flow: RTL to GDS - NPTEL (IIIT Delhi)</div>
+            <div class="cert-badge">Digital Design with Verilog - NPTEL (IIT Guwahati)</div>
+            <div class="cert-badge">C-Based VLSI Design - NPTEL (IIT Guwahati)</div>
+            <div class="cert-badge">Nasscom and VSD Certified Workshop in Digital VLSI SoC Design and RISC-V MYTH Program</div>
+        </div>
+
+        <h3 style="margin-top: 2rem;">🌐 IoT & Industry 4.0</h3>
+        <div class="cert-grid">
+            <div class="cert-badge">Minor Degree in IoT - IIITDM Kurnool</div>
+            <div class="cert-badge silver">Introduction to Industry 4.0 & IIoT - NPTEL (Silver Medal)</div>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Special Recognition</h3>
+        <div class="cert-grid">
+            <div class="cert-badge">ISWDP Samsung Student Fellowship Recipient</div>
+            <div class="cert-badge">One among the top 0.1% of candidates in CBSE Computer Science Boards Class 12 </div>
+            <div class="cert-badge">DVCon India Design Contest 2025 - Stage 1 Shortlisted</div>
+        </div>
     </div>
-  </section>
 
-  <div class="nav">
-    <a href="index.html">Back to Home</a>
-  </div>
+    <!-- Skill Proficiency -->
+    <h2>Skill Proficiency</h2>
+    <div class="proficiency-section">
+        <div class="proficiency-item">
+            <div class="proficiency-header">
+                <span>⭐⭐⭐⭐⭐ Expert Level</span>
+                <span>100%</span>
+            </div>
+            <div class="proficiency-bar">
+                <div class="proficiency-fill" style="width: 100%"></div>
+            </div>
+            <p style="margin-top: 0.5rem; color: #666;">
+                Verilog · C · Python · RTL Design · TensorFlow · Digital Design · Static Timing Analysis
+            </p>
+        </div>
 
-  <div class="footer">
-    <p>&copy; 2025 Kirthana P Rao. All rights reserved.</p>
-    <p>Continuously evolving skills. Last updated: December 2025</p>
-  </div>
+        <div class="proficiency-item">
+            <div class="proficiency-header">
+                <span>⭐⭐⭐⭐ Advanced Level</span>
+                <span>80%</span>
+            </div>
+            <div class="proficiency-bar">
+                <div class="proficiency-fill" style="width: 80%"></div>
+            </div>
+            <p style="margin-top: 0.5rem; color: #666;">
+                ASIC Design · PCB Design · MATLAB · C++ · OOP · Embedded Systems · HLS Programming · IoT
+            </p>
+        </div>
+
+        <div class="proficiency-item">
+            <div class="proficiency-header">
+                <span>⭐⭐⭐ Intermediate Level</span>
+                <span>60%</span>
+            </div>
+            <div class="proficiency-bar">
+                <div class="proficiency-fill" style="width: 60%"></div>
+            </div>
+            <p style="margin-top: 0.5rem; color: #666;">
+                MATLAB Programming · Web Development · Simulink · CAN · RTOS
+            </p>
+        </div>
+
+        <div class="proficiency-item">
+            <div class="proficiency-header">
+                <span>📚 Currently Learning</span>
+                <span>40%</span>
+            </div>
+            <div class="proficiency-bar">
+                <div class="proficiency-fill" style="width: 40%"></div>
+            </div>
+            <p style="margin-top: 0.5rem; color: #666;">
+                RTL Verification · DFT · UVM · SystemVerilog
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="index.html">Back to Home</a>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Kirthana P Rao. All rights reserved.</p>
+        <p style="color: #111; font-size: 0.9rem;">
+            Continuously evolving skills. Last updated: December 2025
+        </p>
+    </div>
 </body>
 </html>
