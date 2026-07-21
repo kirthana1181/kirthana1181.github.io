@@ -226,7 +226,7 @@ a:hover {
       <li><strong>Samsung ISWDP Fellowship Recipient</strong> – Selected as a trainee in semiconductor design and fabrication.</li>
       <li><strong>Silver Medal</strong> – NPTEL Industry 4.0 &amp; Industrial IoT Course.</li>
       <li><strong>2nd Runner-up</strong> – RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24.</li>
-      <li><strong>Top 0.1%</strong> – Computer Science, CBSE Class XII Boards 2022.</li>
+      <li><strong>Top 0.1%</strong> – Computer Science, CBSE Secondary School Examination 2022.</li>
     </ul>
   </div>
 </section>
