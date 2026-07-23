@@ -27,24 +27,6 @@ body {
   margin: 0 auto;
 }
 
-.portfolio-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin: 0.5rem 0 1rem;
-  font-weight: 600;
-}
-
-.portfolio-nav a,
-.text-link {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.portfolio-nav a:hover,
-.text-link:hover {
-  text-decoration: underline;
-}
 
 section {
   margin: 1rem 0;
@@ -109,10 +91,10 @@ p {
   display: block;
   width: 140px;
   height: 140px;
-  border: 4px solid var(--primary);
+  border: none;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 7px 18px rgba(79, 70, 229, 0.25);
+  box-shadow: none;
 }
 
 .profile-text {
@@ -265,46 +247,9 @@ p {
   .portfolio-shell {
     width: min(100% - 1rem, 1050px);
   }
-
-  .hero-card,
-  .card,
-  .cta-card {
-    padding: 1.15rem;
-  }
-
-  .profile-container {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
   .profile-image img {
     width: 115px;
     height: 115px;
-  }
-
-  .focus-chips,
-  .hero-actions,
-  .opportunity-tags {
-    justify-content: center;
-  }
-
-  .proof-bar {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .two-column,
-  .equal-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-content {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 1.9rem;
   }
 }
 </style>
