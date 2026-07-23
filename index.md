@@ -351,8 +351,8 @@ p {
       <h2>Beyond Engineering</h2>
       <ul class="compact-list">
         <li>Trained Carnatic vocalist and stage performer.</li>
-        <li>Orator and event emcee.</li>
-        <li>Interested in global food, culture and travel.</li>
+        <li>Orator and event Emcee.</li>
+        <!-- <li>Interested in global food, culture and travel.</li> -->
       </ul>
     </div>
   </section>
