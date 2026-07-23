@@ -255,11 +255,6 @@ p {
 </style>
 
 <div class="portfolio-shell">
-  <nav class="portfolio-nav" aria-label="Portfolio navigation">
-    <a href="/projects">Projects</a>
-    <a href="/skills">Skills</a>
-  </nav>
-
   <section>
     <div class="hero-card">
       <div class="profile-container">
