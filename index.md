@@ -325,7 +325,7 @@ p {
         <p>Implemented a pipelined processor with instruction decoding, register operations and hazard handling.</p>
       </div>
 
-      <p><a class="text-link" href="/projects">View all projects →</a></p>
+      <p><a class="text-link" href="/projects"><strong>View all projects</strong></a></p>
     </div>
 
     <div class="card">
