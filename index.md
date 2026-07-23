@@ -278,7 +278,7 @@ p {
 
           <div class="hero-actions">
             <a class="button" href="/projects">View Projects</a>
-            <a class="button secondary" href="/assets/docs/Kirthana_Rao_CV.pdf" download>
+            <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>
               Download CV
             </a>
             <a class="button secondary" href="mailto:work.kirthana@gmail.com">Contact Me</a>
