@@ -266,14 +266,13 @@ p {
 
         <div class="profile-text">
           <h1>Hi, I'm Kirthana</h1>
-          <p class="hero-role">ECE student building VLSI, Embedded and AI-enabled hardware systems.</p>
+          <p class="hero-role">Project Associate at IISc, Bangalore</p>
           <p>
-            An Undergraduate Engineering student at
-            <strong>IIITDM Kurnool</strong>, with deep interest in VLSI, AI and Embedded System Design.
+             Project Associate at IISc, Bangalore, at the Future Computing Systems Research Group, at the Dept. of CSA, with deep interest in the areas of VLSI, AI and Embedded System Design.
           </p>
 
           <!-- <div class="focus-chips" aria-label="Focus areas">
-            <span class="focus-chip">RTL &amp; FPGA Design</span>
+            <span class="focus-chip">RTL &amp; Design</span>
             <span class="focus-chip">AI Hardware</span>
             <span class="focus-chip">Embedded Systems &amp; VLSI</span>
           </div> -->
@@ -294,7 +293,7 @@ p {
     <div class="proof-bar">
       <div class="proof-item">
         <strong>Samsung ISWDP</strong>
-        <span>Semiconductor fellowship recipient</span>
+        <span>Semiconductor Fellowship Recipient</span>
       </div>
       <!-- <div class="proof-item">
         <strong>NPTEL Silver</strong>
@@ -302,7 +301,7 @@ p {
       </div> -->
       <div class="proof-item">
         <strong>RoboRythm</strong>
-        <span>Second runner-up at SOLASTA 2024</span>
+        <span>Second Runner-Up at SOLASTA 2K24</span>
       </div>
       <!-- <div class="proof-item">
         <strong>CBSE Top 0.1%</strong>
