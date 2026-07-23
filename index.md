@@ -243,6 +243,8 @@ p {
   transform: translateY(-2px);
 }
 
+.masthead__menu-item a { color: #4f46e5 !important; }
+  
 @media (max-width: 768px) {
   .portfolio-shell {
     width: min(100% - 1rem, 1050px);
