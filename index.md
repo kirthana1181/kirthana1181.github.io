@@ -1,17 +1,6 @@
 ---
-layout: home
----
-
-<div style="
-  display:flex;
-  justify-content:center;
-  gap:2rem;
-  margin:1rem 0;
-  font-weight:600;">
-  <a href="/projects">Projects</a>
-  <a href="/skills">Skills</a>
-</div>
-
+layout: splash
+classes: wide
 ---
 
 <style>
@@ -23,294 +12,432 @@ layout: home
   --text: #111827;
   --muted: #6b7280;
   --card: #ffffff;
+  --border: #e5e7eb;
 }
 
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
-h1, h2, h3 {
+.portfolio-shell {
+  width: min(1050px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 0.5rem 0 1rem;
+  font-weight: 600;
+}
+
+.portfolio-nav a,
+.text-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.portfolio-nav a:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  margin: 0 0 0.25rem;
 }
 
 h2 {
-  font-size: 1.5rem;
   color: var(--secondary);
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem;
 }
 
 h3 {
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
 }
 
-section {
-  margin: 2.5rem auto;
+p {
+  margin: 0.45rem 0;
 }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
+.card,
+.hero-card,
+.cta-card {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.055);
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* REGULAR CARDS - Narrower for readability */
 .card {
-  background: var(--card);
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  margin: 0 auto 1.5rem auto;
-  max-width: 850px;
+  padding: 1.25rem 1.5rem;
 }
 
-/* HERO CARD - MUCH WIDER to stand out */
 .hero-card {
-  background: var(--card);
-  padding: 3.5rem;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  margin: 0 auto 2rem auto;
-  max-width: 1200px;
+  padding: 2rem 2.25rem;
   border: 2px solid var(--primary);
 }
 
-.badge {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-/* HERO LAYOUT: Image centered ABOVE text */
 .profile-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 2rem;
-}
-
-.profile-text {
-  width: 100%;
-  max-width: 900px;
+  text-align: left;
 }
 
 .profile-image {
-  display: block;
-  text-align: center;
-  margin: 0 auto 1rem auto;
+  flex: 0 0 auto;
 }
 
 .profile-image img {
-  width: 200px;
-  height: 200px;
+  display: block;
+  width: 140px;
+  height: 140px;
+  border: 4px solid var(--primary);
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--primary);
-  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
-  display: block;
-  margin: 0 auto;
+  box-shadow: 0 7px 18px rgba(79, 70, 229, 0.25);
 }
 
-/* Reusable list styling inside cards */
-.card ul, .hero-card ul {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+.profile-text {
+  min-width: 0;
 }
 
-.card li, .hero-card li {
-  margin-bottom: 0.5rem;
+.hero-role {
+  color: var(--secondary);
+  font-size: 1.08rem;
+  font-weight: 650;
+  margin: 0 0 0.55rem;
 }
 
-/* Social icons */
-.socials {
-  text-align: center;
-  margin: 1rem 0;
+.focus-chips,
+.opportunity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
 }
 
-.socials a {
+.focus-chip,
+.opportunity-tag {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.button {
   display: inline-block;
-  margin: 0 0.5rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff !important;
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: none !important;
+}
+
+.button.secondary {
+  background: #eef2ff;
+  color: #3730a3 !important;
+  border: 1px solid #c7d2fe;
+}
+
+.proof-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.proof-item {
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  text-align: center;
+}
+
+.proof-item strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.proof-item span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  margin-top: 0.2rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1rem;
+}
+
+.equal-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-preview + .project-preview {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.compact-list {
+  margin: 0.45rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.compact-list li {
+  margin-bottom: 0.3rem;
+}
+
+.tool-row {
+  margin-bottom: 0.7rem;
+}
+
+.tool-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.cta-card {
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--accent);
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 0.65rem;
 }
 
 .socials img {
+  display: block;
+  width: 28px;
+  height: 28px;
   filter: grayscale(1);
-  transition: 0.3s;
+  transition: 0.2s ease;
 }
 
 .socials img:hover {
   filter: grayscale(0);
-  transform: scale(1.1);
+  transform: translateY(-2px);
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
-  .hero-card {
-    padding: 2rem;
-    max-width: 100%;
+  .portfolio-shell {
+    width: min(100% - 1rem, 1050px);
   }
-  
-  .card {
-    padding: 1.5rem;
-    max-width: 100%;
+
+  .hero-card,
+  .card,
+  .cta-card {
+    padding: 1.15rem;
   }
-  
+
+  .profile-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
   .profile-image img {
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
   }
-  
+
+  .focus-chips,
+  .hero-actions,
+  .opportunity-tags {
+    justify-content: center;
+  }
+
+  .proof-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .two-column,
+  .equal-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
   }
 }
 </style>
 
----
+<div class="portfolio-shell">
+  <nav class="portfolio-nav" aria-label="Portfolio navigation">
+    <a href="/projects">Projects</a>
+    <a href="/skills">Skills</a>
+  </nav>
 
-<section>
-  <div class="hero-card">
-    <div class="profile-container">
-      <!-- IMAGE FIRST - centered at top -->
-      <div class="profile-image">
-        <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+  <section>
+    <div class="hero-card">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
+        </div>
+
+        <div class="profile-text">
+          <h1>Hi, I'm Kirthana</h1>
+          <p class="hero-role">ECE student building VLSI, embedded and AI-enabled hardware systems.</p>
+          <p>
+            I am a B.Tech student at <strong>IIITDM Kurnool</strong> interested in efficient digital hardware,
+            FPGA prototyping, embedded systems and machine-learning acceleration.
+          </p>
+
+          <div class="focus-chips" aria-label="Focus areas">
+            <span class="focus-chip">RTL &amp; FPGA Design</span>
+            <span class="focus-chip">AI Hardware</span>
+            <span class="focus-chip">Embedded &amp; IoT</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button" href="/projects">View Projects</a>
+            <a class="button secondary" href="mailto:work.kirthana@gmail.com">Contact Me</a>
+          </div>
+        </div>
       </div>
-      
-  <!-- TEXT BELOW - centered -->
-  <div class="profile-text">
-    <span class="badge">ECE • VLSI • AI-ML • Embedded Systems</span>
-    <h1>Hi, I'm Kirthana</h1>
-    <h2>Electronics &amp; Communication Engineering | VLSI Design | AI-ML Enthusiast | Embedded Systems</h2>
-    <p>
-      I'm a B.Tech student at <strong>IIITDM Kurnool</strong>, passionate about <strong>VLSI</strong>, <strong>Embedded Systems</strong> and the intersection of <strong>VLSI</strong> and <strong>Machine Learning</strong>. I love to practically apply my knowledge in building efficient real-world solutions.
-    </p>
-  </div>
+    </div>
+  </section>
+
+  <section aria-label="Highlights and achievements">
+    <div class="proof-bar">
+      <div class="proof-item">
+        <strong>Samsung ISWDP</strong>
+        <span>Semiconductor fellowship recipient</span>
+      </div>
+      <div class="proof-item">
+        <strong>NPTEL Silver</strong>
+        <span>Industry 4.0 and Industrial IoT</span>
+      </div>
+      <div class="proof-item">
+        <strong>RoboRythm</strong>
+        <span>Second runner-up at SOLASTA 2024</span>
+      </div>
+      <div class="proof-item">
+        <strong>CBSE Top 0.1%</strong>
+        <span>Computer Science, Class XII</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-column">
+    <div class="card">
+      <h2>Featured Work</h2>
+
+      <div class="project-preview">
+        <h3>Compressor-Based Dadda Multiplier</h3>
+        <p>Improved speed by <strong>16%</strong> and reduced power by <strong>8%</strong> using optimized compressor logic.</p>
+      </div>
+
+      <div class="project-preview">
+        <h3>RISC-V Pipelined Processor</h3>
+        <p>Implemented a pipelined processor with instruction decoding, register operations and hazard handling.</p>
+      </div>
+
+      <p><a class="text-link" href="/projects">View all projects →</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Technical Toolkit</h2>
+      <p class="tool-row"><strong>Hardware:</strong> Verilog, TL-Verilog, FPGA, RTL, RISC-V.</p>
+      <p class="tool-row"><strong>Software:</strong> Python, C, C++, TensorFlow.</p>
+      <p class="tool-row"><strong>Tools:</strong> Vivado, Virtuoso, OpenLANE, KiCad, Git, Linux.</p>
+      <p><a class="text-link" href="/skills">Explore skills →</a></p>
+    </div>
+  </section>
+
+  <section class="two-column equal-columns">
+    <div class="card">
+      <h2>Continuous Learning</h2>
+      <ul class="compact-list">
+        <li>Machine Learning and Deep Learning specializations.</li>
+        <li>VLSI design flow from RTL to GDS.</li>
+        <li>Minor degree in Internet of Things.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Beyond Engineering</h2>
+      <ul class="compact-list">
+        <li>Trained Carnatic vocalist and stage performer.</li>
+        <li>Orator and event emcee.</li>
+        <li>Interested in global food, culture and travel.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-card">
+      <div class="cta-content">
+        <div>
+          <h2>Open to Opportunities</h2>
+          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI hardware and embedded systems.</p>
+          <div class="opportunity-tags">
+            <span class="opportunity-tag">VLSI Design</span>
+            <span class="opportunity-tag">FPGA Development</span>
+            <span class="opportunity-tag">AI Acceleration</span>
+            <span class="opportunity-tag">Embedded Systems</span>
+          </div>
+        </div>
+
+        <div class="socials" aria-label="Contact links">
+          <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
+          </a>
+          <a href="https://github.com/kirthana1181" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
+          </a>
+          <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>What I Do</h2>
-    <p><strong>Hardware Design</strong> – Creating optimized digital systems from RTL to silicon, with expertise in FPGA prototyping and RISC-V architecture.</p>
-    <p><strong>AI-ML Integration</strong> – Developing machine learning models for autonomous systems and exploring hardware acceleration techniques.</p>
-    <p><strong>Embedded Systems</strong> – Building IoT solutions and embedded applications that bridge software intelligence with hardware efficiency.</p>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Highlights &amp; Achievements</h2>
-    <ul>
-      <li><strong>Samsung ISWDP Fellowship Recipient</strong> – Selected as a trainee in semiconductor design and fabrication.</li>
-      <li><strong>Silver Medal</strong> – NPTEL Industry 4.0 &amp; Industrial IoT Course.</li>
-      <li><strong>2nd Runner-up</strong> – RoboRythm Competition, SOLASTA Techno-Cultural Fest 2K24.</li>
-      <li><strong>Top 0.1%</strong> – Computer Science, CBSE Secondary School Examination 2022.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Featured Work</h2>
-    <h3>Compressor-Based Dadda Multiplier</h3>
-    <p>
-      Optimized 8×8 bit multiplier achieving <strong>16% speed improvement</strong> and <strong>8% power reduction</strong>
-      using advanced compression techniques in Xilinx Vivado.
-    </p>
-    <h3>RISC-V Pipelined Processor</h3>
-    <p>
-      Designed and implemented a multi-stage pipelined RISC-V processor with comprehensive hazard handling and instruction decoding in TL-Verilog.
-    </p>
-    <p><a href="/projects">View All Projects →</a></p>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Technical Toolkit</h2>
-    <p><strong>Hardware:</strong> Verilog, TL-Verilog, FPGA (Xilinx Vivado), RTL Design, RISC-V ISA.</p>
-    <p><strong>Software:</strong> Python, C, C++, TensorFlow, MySQL.</p>
-    <p><strong>Tools:</strong> Cadence Virtuoso, OpenLANE, KiCAD, Git, Linux OS, VS Code.</p>
-    <p><a href="/skills">Explore My Skills →</a></p>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Continuous Learning 💡</h2>
-    <p>I'm certified in:</p>
-    <ul>
-      <li>Machine Learning Specialization (Stanford &amp; DeepLearning.AI).</li>
-      <li>Neural Networks &amp; CNNs (DeepLearning.AI).</li>
-      <li>VLSI Design Flow: RTL to GDS (NPTEL) &amp; C-based VLSI Design (NPTEL).</li>
-      <li>Minor Degree in Internet of Things (IoT).</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Beyond the Code 🎵</h2>
-    <ul>
-      <li>A stage performer, trained Carnatic vocalist, and an orator cum emcee 🎤.</li>
-      <li>Exploring and learning possible innovations in the world of Semiconductor and AI 🔧.</li>
-      <li>Exploring food, culture, and lifestyle around the world 🌍.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Let's Connect</h2>
-    <p>
-      I'm always open to discussing new opportunities, collaborations, or innovative ideas in VLSI, AI-ML, and Embedded Systems.
-    </p>
-    <p class="socials">
-      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="34" height="34" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/kirthana1181">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="34" height="34" alt="GitHub" />
-      </a>
-      <a href="mailto:work.kirthana@gmail.com">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" width="34" height="34" alt="Email" />
-      </a>
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="card">
-    <h2>Open to Opportunities</h2>
-    <p>Currently seeking <strong>internships</strong> and <strong>research positions</strong> in:</p>
-    <ul>
-      <li>VLSI Design &amp; Verification.</li>
-      <li>AI Hardware Acceleration.</li>
-      <li>FPGA Development.</li>
-      <li>Embedded Systems Engineering.</li>
-    </ul>
-    <p><em>"Designing tomorrow's intelligent systems."</em></p>
-  </div>
-</section>
