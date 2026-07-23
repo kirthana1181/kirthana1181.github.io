@@ -283,7 +283,7 @@ p {
             <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>
               Download CV
             </a>
-            <a class="button secondary" href="mailto:work.kirthana@gmail.com">Contact Me</a>
+            <a class="button secondary" href="/contact.html">Contact Me</a>
           </div>
         </div>
       </div>
