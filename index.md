@@ -264,17 +264,17 @@ p {
 
         <div class="profile-text">
           <h1>Hi, I'm Kirthana</h1>
-          <p class="hero-role">ECE student building VLSI, embedded and AI-enabled hardware systems.</p>
+          <p class="hero-role">ECE student building VLSI, Embedded and AI-enabled hardware systems.</p>
           <p>
-            I am a B.Tech student at <strong>IIITDM Kurnool</strong> interested in efficient digital hardware,
-            FPGA prototyping, embedded systems and machine-learning acceleration.
+            An Undergraduate Engineering student at
+            <strong>IIITDM Kurnool</strong>, with deep interest in VLSI, AI and Embedded System Design.
           </p>
 
-          <div class="focus-chips" aria-label="Focus areas">
+          <!-- <div class="focus-chips" aria-label="Focus areas">
             <span class="focus-chip">RTL &amp; FPGA Design</span>
             <span class="focus-chip">AI Hardware</span>
-            <span class="focus-chip">Embedded &amp; IoT</span>
-          </div>
+            <span class="focus-chip">Embedded Systems &amp; VLSI</span>
+          </div> -->
 
           <div class="hero-actions">
             <a class="button" href="/projects">View Projects</a>
@@ -291,18 +291,18 @@ p {
         <strong>Samsung ISWDP</strong>
         <span>Semiconductor fellowship recipient</span>
       </div>
-      <div class="proof-item">
+      <!-- <div class="proof-item">
         <strong>NPTEL Silver</strong>
         <span>Industry 4.0 and Industrial IoT</span>
-      </div>
+      </div> -->
       <div class="proof-item">
         <strong>RoboRythm</strong>
         <span>Second runner-up at SOLASTA 2024</span>
       </div>
-      <div class="proof-item">
+      <!-- <div class="proof-item">
         <strong>CBSE Top 0.1%</strong>
-        <span>Computer Science, Class XII</span>
-      </div>
+        <span>Computer Science, </span>
+      </div> -->
     </div>
   </section>
 
@@ -325,10 +325,10 @@ p {
 
     <div class="card">
       <h2>Technical Toolkit</h2>
-      <p class="tool-row"><strong>Hardware:</strong> Verilog, TL-Verilog, FPGA, RTL, RISC-V.</p>
+      <p class="tool-row"><strong>Hardware:</strong> Verilog HDL, TL-Verilog HDL, FPGA, RTL, RISC-V.</p>
       <p class="tool-row"><strong>Software:</strong> Python, C, C++, TensorFlow.</p>
       <p class="tool-row"><strong>Tools:</strong> Vivado, Virtuoso, OpenLANE, KiCad, Git, Linux.</p>
-      <p><a class="text-link" href="/skills">Explore skills →</a></p>
+      <p><a class="text-link" href="/skills"><strong>Explore skills</strong></a></p>
     </div>
   </section>
 
