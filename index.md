@@ -385,8 +385,7 @@ p {
     <h3>Research Intern, IISc Bangalore</h3>
     <p class="experience-date">Jan 2026 - July 2026</p>
     <p>
-      Worked on developing an end-to-end implementation framework for depoying ML Algorithms on FPGAs, as part of an industry project at the Future Computing Systems (FIST) Research group, at the Dept. of Computer Science & Automation. Check out <link rel="my profile" href=" https://www.csa.iisc.ac.in/~skmandal/kirthana.html">
-                    </p>
+      Worked on developing an end-to-end implementation framework for depoying ML Algorithms on FPGAs, as part of an industry project at the Future Computing Systems (FIST) Research group, at the Dept. of Computer Science & Automation.
     </p>
     <div class="experience-skills">
       <span class="experience-tag">Verilog</span>
