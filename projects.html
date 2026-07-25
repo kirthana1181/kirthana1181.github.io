@@ -4,37 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Kirthana P Rao</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
     <style>
-                .top-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            padding: 1rem;
+        * {
             margin: 0;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        .top-nav a {
-            display: inline-block;
-            padding: 0.55rem 1.1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .top-nav a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.35);
-        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -47,8 +31,52 @@
             margin: 0 auto;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+        }
+
+        /* Shared navigation style used at both the top and bottom. */
+        .top-nav,
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding: 1rem;
+            margin: 0;
+            background: #f8f9fa;
+        }
+
+        .top-nav {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .footer-nav {
+            padding-top: 0.75rem;
+        }
+
+        .top-nav a,
+        .footer-nav a {
+            display: inline-block;
+            padding: 0.55rem 1.1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .top-nav a:hover,
+        .footer-nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.35);
+        }
+
+        .top-nav a[aria-current="page"],
+        .footer-nav a[aria-current="page"] {
+            background: #4338ca;
         }
 
         .header {
@@ -75,6 +103,7 @@
             gap: 1rem;
             padding: 2rem;
             background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         .filter-btn {
@@ -89,40 +118,13 @@
             font-weight: 500;
         }
 
-        .filter-btn:hover, .filter-btn.active {
+        .filter-btn:hover,
+        .filter-btn.active {
             background: #667eea;
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
-
-        /* .stats-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            padding: 2rem;
-            background: #f8f9fa;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: #666;
-            font-size: 0.9rem;
-        } */
 
         .projects-grid {
             display: grid;
@@ -135,14 +137,14 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             border: 1px solid #e0e0e0;
+            transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
         }
 
         .project-header {
@@ -171,6 +173,11 @@
             line-height: 1.7;
         }
 
+        .project-description a {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
@@ -189,287 +196,199 @@
 
         .page-footer {
             background: #f8f9fa;
-            padding: 2rem;
             text-align: center;
             border-top: 1px solid #e0e0e0;
+            padding: 1.25rem 1rem 0.75rem;
         }
 
         .page-footer p {
             color: #666;
-            margin-bottom: 1rem;
+            margin: 0;
             font-size: 0.9rem;
         }
 
-        .back-home {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .back-home:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        .back-home i {
-            font-size: 1.1rem;
-        }
-
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+            }
+
             .header h1 {
                 font-size: 1.8rem;
             }
 
             .projects-grid {
                 grid-template-columns: 1fr;
+                gap: 1rem;
                 padding: 1rem;
             }
 
             .filter-buttons {
+                gap: 0.6rem;
                 padding: 1rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+            }
+
+            .top-nav,
+            .footer-nav {
+                gap: 0.5rem;
+                padding: 0.8rem;
+            }
+
+            .top-nav a,
+            .footer-nav a {
+                padding: 0.5rem 0.9rem;
             }
         }
     </style>
 </head>
+
 <body>
-      
     <div class="container">
+
         <nav class="top-nav" aria-label="Primary navigation">
             <a href="/">Home</a>
-            <a href="/projects">Projects</a>
+            <a href="/projects" aria-current="page">Projects</a>
             <a href="/skills">Skills</a>
         </nav>
 
         <header class="header">
             <h1>
-                <i class="fas fa-project-diagram"></i>
+                <i class="fas fa-project-diagram" aria-hidden="true"></i>
                 My Projects
             </h1>
             <p>
-                Building innovative solutions at the intersection of hardware and software
+                Building innovative solutions at the intersection of hardware and software.
             </p>
         </header>
 
-        <!-- <div class="stats-section">
-            <div class="stat-card">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Projects Completed</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">1</div>
-                <div class="stat-label">Research Internships</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">10%</div>
-                <div class="stat-label">Avg Performance Gain</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Technologies Mastered</div>
-            </div>
-        </div> -->
+        <main>
+            <section class="filter-buttons" aria-label="Project filters">
+                <button class="filter-btn active" type="button" data-filter="all">
+                    All Projects
+                </button>
+                <button class="filter-btn" type="button" data-filter="vlsi">
+                    VLSI Design
+                </button>
+                <button class="filter-btn" type="button" data-filter="ml">
+                    Machine Learning
+                </button>
+                <button class="filter-btn" type="button" data-filter="embedded">
+                    Embedded Systems
+                </button>
+            </section>
 
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="vlsi">VLSI Design</button>
-            <button class="filter-btn" data-filter="ml">Machine Learning</button>
-            <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
-            <!-- <button class="filter-btn" data-filter="research">Research</button> -->
-        </div>
+            <section class="projects-grid" id="projectsGrid" aria-label="Projects">
 
-        <div class="projects-grid" id="projectsGrid">
-            <!-- Project 1: Dadda Multiplier -->
-            <div class="project-card" data-category="vlsi">
-                <div class="project-header">
-                    <h3>Compressor-Based Dadda Multiplier</h3>
-                    <div class="project-date">March 2025 - April 2025</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Designed and implemented an optimized 8×8 bit Dadda Multiplier using advanced 4-2 and 3-2 compressor techniques for large-scale multiplier applications, achieving 16% speed improvement and 8% power reduction.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Verilog HDL</span>
-                        <span class="tech-tag">Xilinx Vivado</span>
-                        <span class="tech-tag">RTL Design</span>
-                        <span class="tech-tag">Digital Logic</span>
+                <article class="project-card" data-category="vlsi">
+                    <div class="project-header">
+                        <h3>Compressor-Based Dadda Multiplier</h3>
+                        <div class="project-date">March 2025 - April 2025</div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Project 2: RISC-V Processor -->
-            <div class="project-card" data-category="vlsi">
-                <div class="project-header">
-                    <h3>RISC-V Pipelined Processor</h3>
-                    <div class="project-date">May 2025</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Developed a complete RISC-V processor implementation from ALU design to multi-stage pipelining with comprehensive hazard handling, instruction decoding, and register file operations.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">TL-Verilog</span>
-                        <span class="tech-tag">RISC-V ISA</span>
-                        <span class="tech-tag">C</span>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Designed and implemented an optimized 8×8-bit Dadda multiplier
+                            using advanced 4-2 and 3-2 compressor techniques, achieving a
+                            16% speed improvement and an 8% power reduction.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Verilog HDL</span>
+                            <span class="tech-tag">Xilinx Vivado</span>
+                            <span class="tech-tag">RTL Design</span>
+                            <span class="tech-tag">Digital Logic</span>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <!-- Project 3: AXI4-Lite Packet Sorter -->
-            <div class="project-card" data-category="vlsi">
-                <div class="project-header">
-                    <h3>AXI4-Lite Protocol-Based Packet Sorter</h3>
-                    <div class="project-date">June 2025</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Designed a packet sorting system using AXI4-Lite Protocol with intelligent data classification for 32-bit packets, utilizing dual FIFO architecture optimized for low-latency operation.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">AXI4-Lite</span>
-                        <span class="tech-tag">RTL Design</span>
-                        <span class="tech-tag">Verilog HDL</span>
-                        <span class="tech-tag">FIFO</span>
+                <article class="project-card" data-category="vlsi">
+                    <div class="project-header">
+                        <h3>RISC-V Pipelined Processor</h3>
+                        <div class="project-date">May 2025</div>
                     </div>
-                </div>
-            </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Developed a complete RISC-V processor implementation from ALU
+                            design to multi-stage pipelining, including hazard handling,
+                            instruction decoding and register-file operations.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">TL-Verilog</span>
+                            <span class="tech-tag">RISC-V ISA</span>
+                            <span class="tech-tag">C</span>
+                        </div>
+                    </div>
+                </article>
 
-            <!-- Project 4: Research Intern at TiHAN
-            <div class="project-card" data-category="research ml">
-                <div class="project-header">
-                    <h3>Research Intern at TiHAN - IIT Hyderabad</h3>
-                    <div class="project-date">June 2024 - July 2024 | IIT Hyderabad</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Worked on developing and training a Machine Learning Model for an ADAS-based Project, achieving over 94% accuracy. Also worked as a Project Intern on Network Handover between Cellular Networks (4G LTE) and Wi-Fi Network, using Bash and OpenAir Interface in Unix CLI.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Communication Protocols</span>
-                        <span class="tech-tag">Network Handover</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">ADAS</span>
-                        <span class="tech-tag">Bash</span>
+                <article class="project-card" data-category="vlsi">
+                    <div class="project-header">
+                        <h3>AXI4-Lite Protocol-Based Packet Sorter</h3>
+                        <div class="project-date">June 2025</div>
                     </div>
-                </div>
-            </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Designed a packet-sorting system using AXI4-Lite with
+                            intelligent classification for 32-bit packets and a dual-FIFO
+                            architecture optimized for low-latency operation.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AXI4-Lite</span>
+                            <span class="tech-tag">RTL Design</span>
+                            <span class="tech-tag">Verilog HDL</span>
+                            <span class="tech-tag">FIFO</span>
+                        </div>
+                    </div>
+                </article>
 
-             Project 7: Research Intern at IISC 
-            <div class="project-card" data-category="research ml">
-                <div class="project-header">
-                    <h3>Research Intern at IISc, Bangalore</h3>
-                    <div class="project-date">Jan 2026 - July 2026 | IISc</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Worked on developing an end-to-end implementation framework for depoying ML Algorithms on FPGAs, as part of an industry project at the Future Computing Systems (FIST) Research group, at the Dept. of Computer Science & Automation. Check out <link rel="my profile" href=" https://www.csa.iisc.ac.in/~skmandal/kirthana.html">
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">FINN Compiler</span>
-                        <span class="tech-tag">Brevitas</span>
-                        <span class="tech-tag">RTL Design in Verilog</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-            </div>
+                <!--
+                Add future project cards here. Every card should use:
+                <article class="project-card" data-category="vlsi ml embedded research">
+                    ...
+                </article>
+                -->
 
-            <!-- Project 5: Line-Following Robot
-            <div class="project-card" data-category="embedded">
-                <div class="project-header">
-                    <h3>Line-Following Robot</h3>
-                    <div class="project-date">SOLASTA Techno-Cultural Fest 2K24</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Designed and built an autonomous line-following robot for the RoboRythm competition, featuring sensor-based navigation and real-time path correction algorithm. Achieved 2nd Runner-up position.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Arduino</span>
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">Embedded Systems</span>
-                        <span class="tech-tag">Sensor Integration</span>
-                    </div>
-                </div>
-            </div>
-
-            Project 6: FPGA Digital Systems
-            <div class="project-card" data-category="vlsi">
-                <div class="project-header">
-                    <h3>Digital Systems Prototyping</h3>
-                    <div class="project-date">May 2025 - June 2025 | NIELIT Calicut</div>
-                </div>
-                <div class="project-body">
-                    <p class="project-description">
-                        Hands-on training in FPGA-based digital system design, RTL synthesis, and hardware prototyping during summer internship, covering the complete RTL to bitstream workflow and multiple digital system implementations.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Verilog</span>
-                        <span class="tech-tag">FPGA</span>
-                        <span class="tech-tag">Logic Synthesis</span>
-                        <span class="tech-tag">Digital Design</span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+            </section>
+        </main>
 
         <footer class="page-footer">
             <p>&copy; 2026 Kirthana P Rao. All rights reserved.</p>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="/">Home</a>
+                <a href="/projects" aria-current="page">Projects</a>
+                <a href="/skills">Skills</a>
+            </nav>
         </footer>
-            
-        <nav class="top-nav" aria-label="Primary navigation">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/skills">Skills</a>
-        </nav>
-            
+
     </div>
 
     <script>
-        // Filter functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-filter');
-                
-                // Update active button
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                
-                // Filter projects
-                projectCards.forEach(card => {
-                    const categories = card.getAttribute('data-category').split(' ');
-                    
-                    if (filter === 'all' || categories.includes(filter)) {
-                        card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 10);
-                    } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.8)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
-                    }
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach((item) => {
+                    item.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                projectCards.forEach((card) => {
+                    const categories = card.dataset.category.split(" ");
+                    const shouldShow =
+                        filter === "all" || categories.includes(filter);
+
+                    card.style.display = shouldShow ? "block" : "none";
                 });
             });
-        });
-
-        // Add smooth transitions
-        projectCards.forEach(card => {
-            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         });
     </script>
 </body>
