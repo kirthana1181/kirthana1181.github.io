@@ -340,7 +340,7 @@ p {
     <div class="card">
       <h2>Continuous Learning</h2>
       <ul class="compact-list">
-        <li>Machine Learning and Deep Learning specializations.</li>
+        <li>A.</li>
         <li>VLSI design flow from RTL to GDS.</li>
         <li>Minor degree in Internet of Things.</li>
       </ul>
@@ -348,10 +348,11 @@ p {
 
     <div class="card">
       <h2>Beyond Engineering</h2>
+      <p> Apart from STEM, I also enjoy: </p>
       <ul class="compact-list">
-        <li>Trained Carnatic vocalist and stage performer.</li>
-        <li>Orator and event Emcee.</li>
-        <!-- <li>Interested in global food, culture and travel.</li> -->
+        <li>Music, as a certified carnatic vocalist and a former musical perfomer</li>
+        <li>Oration, hosting as an Emcee and Speaker</li>
+        <li>Trekking, Hiking and Adventure sports!</li>
       </ul>
     </div>
   </section>
@@ -363,10 +364,9 @@ p {
           <h2>Open to Opportunities</h2>
           <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI hardware and embedded systems.</p>
           <div class="opportunity-tags">
-            <span class="opportunity-tag">VLSI Design</span>
-            <span class="opportunity-tag">FPGA Development</span>
+            <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
+            <span class="opportunity-tag">Embedded Software</span>
             <span class="opportunity-tag">AI Acceleration</span>
-            <span class="opportunity-tag">Embedded Systems</span>
           </div>
         </div>
 
