@@ -446,7 +446,7 @@ p {
       <div class="cta-content">
         <div>
           <h2>Open to Opportunities</h2>
-          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI hardware and Embedded System Design.</p>
+          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
           <div class="opportunity-tags">
             <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
             <span class="opportunity-tag">Embedded Software</span>
