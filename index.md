@@ -378,7 +378,7 @@ p {
     </div>
   </section>
 
-  <section class="two-column equal-columns">
+  <section>
    <div class="card">
   <h2>Experience</h2>
      <div class="experience-item">
@@ -427,7 +427,9 @@ p {
     </div>
   </div>
 </div>
+</section>
 
+<section>
     <div class="card">
       <h2>Beyond Engineering</h2>
       <p> Apart from STEM, I also enjoy: </p>
