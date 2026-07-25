@@ -254,6 +254,47 @@ p {
     height: 115px;
   }
 }
+
+.experience-item + .experience-item {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.experience-item h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+}
+
+.experience-item p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.experience-date {
+  color: var(--muted);
+  font-size: 0.8rem !important;
+  font-weight: 600;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+.experience-tag {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+  
 </style>
 
 <div class="portfolio-shell">
@@ -337,14 +378,55 @@ p {
   </section>
 
   <section class="two-column equal-columns">
-    <div class="card">
-      <h2>Continuous Learning</h2>
-      <ul class="compact-list">
-        <li>A.</li>
-        <li>VLSI design flow from RTL to GDS.</li>
-        <li>Minor degree in Internet of Things.</li>
-      </ul>
+   <div class="card">
+  <h2>Experience</h2>
+     <div class="experience-item">
+    <h3>Research Intern, IISc Bangalore</h3>
+    <p class="experience-date">Jan 2026 - July 2026</p>
+    <p>
+      Worked on developing an end-to-end implementation framework for depoying ML Algorithms on FPGAs, as part of an industry project at the Future Computing Systems (FIST) Research group, at the Dept. of Computer Science & Automation. Check out <link rel="my profile" href=" https://www.csa.iisc.ac.in/~skmandal/kirthana.html">
+                    </p>
+    </p>
+    <div class="experience-skills">
+      <span class="experience-tag">Verilog</span>
+      <span class="experience-tag">Machine Learning</span>
+      <span class="experience-tag">RTL Design & Synthesis</span>
+      <span class="experience-tag">FINN Compiler</span>
+      <span class="experience-tag">PyTorch</span>
+      <span class="experience-tag">Bash</span>
     </div>
+  </div>
+     <div class="experience-item">
+    <h3>Summer Intern — NIELIT Calicut</h3>
+    <p class="experience-date">May 2025 – June 2025</p>
+    <p>
+      Hands-on training in FPGA-based digital system design, RTL synthesis, and hardware prototyping, covering the complete RTL to bitstream workflow and multiple digital system implementations.
+    </p>
+
+    <div class="experience-skills">
+      <span class="experience-tag">Verilog</span>
+      <span class="experience-tag">FPGA</span>
+      <span class="experience-tag">RTL Synthesis</span>
+      <span class="experience-tag">Vivado</span>
+    </div>
+  </div>
+  
+  <div class="experience-item">
+    <h3>Research Intern — TiHAN, IIT Hyderabad</h3>
+    <p class="experience-date">June 2024 – July 2024</p>
+    <p>
+      Developed and trained a Machine Learning Model for an ADAS-based Project, achieving over 94% accuracy. Also worked as a Project Intern on Network Handover between Cellular Networks (4G LTE) and Wi-Fi Network, using Bash and OpenAir Interface in Unix CLI.
+    </p>
+
+    <div class="experience-skills">
+      <span class="experience-tag">Machine Learning</span>
+      <span class="experience-tag">Tensorflow 2.0</span>
+      <span class="experience-tag">Network Handover</span>
+      <span class="experience-tag">Bash</span>
+      <span class="experience-tag">Linux</span>
+    </div>
+  </div>
+</div>
 
     <div class="card">
       <h2>Beyond Engineering</h2>
