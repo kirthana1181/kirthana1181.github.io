@@ -432,11 +432,11 @@ p {
 <section>
     <div class="card">
       <h2>Beyond Engineering</h2>
-      <p> Apart from STEM, I also enjoy: </p>
+      <p> Apart from STEM, I also: </p>
       <ul class="compact-list">
-        <li>Music, as a certified carnatic vocalist and a former musical perfomer</li>
-        <li>Oration, hosting as an Emcee and Speaker</li>
-        <li>Trekking, Hiking and Adventure sports!</li>
+        <li> Carry the passion for music and singing, as a certified carnatic vocalist and a former musical perfomer</li>
+        <li> Am a public speaker, and an Emcee</li>
+        <li> enjoy trekking, hiking and adventure sports!</li>
       </ul>
     </div>
   </section>
