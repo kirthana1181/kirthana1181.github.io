@@ -244,16 +244,7 @@ p {
 }
 
 .masthead__menu-item a { color: #4f46e5 !important; }
-  
-@media (max-width: 768px) {
-  .portfolio-shell {
-    width: min(100% - 1rem, 1050px);
-  }
-  .profile-image img {
-    width: 115px;
-    height: 115px;
-  }
-}
+
 
 .experience-item + .experience-item {
   margin-top: 0.85rem;
@@ -295,6 +286,16 @@ p {
   font-weight: 600;
 }
   
+@media (max-width: 768px) {
+  .portfolio-shell {
+    width: min(100% - 1rem, 1050px);
+  }
+  .profile-image img {
+    width: 115px;
+    height: 115px;
+  }
+}
+ 
 </style>
 
 <div class="portfolio-shell">
