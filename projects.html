@@ -206,31 +206,33 @@
             margin: 0;
             font-size: 0.9rem;
         }
-
+        
         .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+        }
+
+        .github-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            margin-top: 1rem;
+            border-radius: 50%;
+            background: #24292f;
+            color: white;
+            text-decoration: none;
+            font-size: 1.35rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
-        .project-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.55rem 0.9rem;
-        background: #24292f;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        
-        .project-link:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        .github-icon:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
         }
 
         @media (max-width: 768px) {
@@ -329,6 +331,18 @@
                             <span class="tech-tag">RTL Design</span>
                             <span class="tech-tag">Digital Logic</span>
                         </div>
+                        <div class = "project-links" >
+                            <a
+                            class="github-icon"
+                            href="https://github.com/kirthana1181/CompressorBasedMultiplier.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View project repository on GitHub"
+                            title="View on GitHub"
+                        >
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        </div>
                     </div>
                 </article>
 
@@ -348,7 +362,19 @@
                             <span class="tech-tag">RISC-V ISA</span>
                             <span class="tech-tag">C</span>
                         </div>
-                    </div>
+                        </div>
+                        <div class = "project-links" >
+                            <a
+                            class="github-icon"
+                            href="https://github.com/kirthana1181/RISC-V-Workshop.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View project repository on GitHub"
+                            title="View on GitHub"
+                        >
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        </div>
                 </article>
 
                 <article class="project-card" data-category="vlsi">
@@ -368,6 +394,17 @@
                             <span class="tech-tag">Verilog HDL</span>
                             <span class="tech-tag">FIFO</span>
                         </div>
+                        <div class = "project-links" >
+                           <a
+                            class="github-icon"
+                            href="https://github.com/kirthana1181/AXI4-Lite-based_Data-Sorter.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View project repository on GitHub"
+                            title="View on GitHub"
+                        >
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </article>
 
