@@ -134,12 +134,15 @@
         }
 
         .project-card {
+            display: flex;
+            flex-direction: column;
             background: white;
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             border: 1px solid #e0e0e0;
-            transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            transition: opacity 0.3s ease, transform 0.3s ease,
+                        box-shadow 0.3s ease;
         }
 
         .project-card:hover {
@@ -164,6 +167,9 @@
         }
 
         .project-body {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
             padding: 1.5rem;
         }
 
@@ -218,16 +224,18 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            align-self: flex-end;
             width: 42px;
             height: 42px;
-            margin-top: 1rem;
+            margin-top: auto;
+            padding-top: 1rem;
             border-radius: 50%;
             background: #24292f;
             color: white;
             text-decoration: none;
             font-size: 1.35rem;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+            }
         
         .github-icon:hover {
             color: white;
