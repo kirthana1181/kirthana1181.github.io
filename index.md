@@ -436,7 +436,7 @@ p {
       <ul class="compact-list">
         <li> Carry the passion for music and singing, as a certified carnatic vocalist and a former musical perfomer</li>
         <li> Am a public speaker, and an Emcee</li>
-        <li> enjoy trekking, hiking and adventure sports!</li>
+        <li> Enjoy trekking, hiking and adventure sports!</li>
       </ul>
     </div>
   </section>
