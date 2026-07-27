@@ -391,6 +391,7 @@ p {
       <span class="experience-tag">Verilog</span>
       <span class="experience-tag">Machine Learning</span>
       <span class="experience-tag">FINN Compiler</span>
+      <span class="experience-tag">RTL Design</span>
       <span class="experience-tag">PyTorch</span>
       <span class="experience-tag">Bash</span>
     </div>
