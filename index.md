@@ -390,7 +390,6 @@ p {
     <div class="experience-skills">
       <span class="experience-tag">Verilog</span>
       <span class="experience-tag">Machine Learning</span>
-      <span class="experience-tag">RTL Design & Synthesis</span>
       <span class="experience-tag">FINN Compiler</span>
       <span class="experience-tag">PyTorch</span>
       <span class="experience-tag">Bash</span>
@@ -406,7 +405,7 @@ p {
     <div class="experience-skills">
       <span class="experience-tag">Verilog</span>
       <span class="experience-tag">FPGA</span>
-      <span class="experience-tag">RTL Synthesis</span>
+      <span class="experience-tag">RTL Design & Synthesis</span>
       <span class="experience-tag">Vivado</span>
     </div>
   </div>
