@@ -310,7 +310,7 @@ p {
           <h1>Hi, I'm Kirthana</h1>
           <p class="hero-role">Project Associate at IISc, Bangalore</p>
           <p>
-             Project Associate at IISc, Bangalore, at the Future Computing Systems Research Group, at the Dept. of CSA, with deep interest in the areas of VLSI, AI and Embedded System Design.
+             Project Associate at IISc, Bangalore, at the Future Computing Systems (FIST) Research Group, at the Dept. of CSA, with deep interest in the areas of VLSI, AI and Embedded System Design.
           </p>
 
           <!-- <div class="focus-chips" aria-label="Focus areas">
