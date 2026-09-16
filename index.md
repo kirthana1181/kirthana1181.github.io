@@ -350,6 +350,15 @@ p {
         <span>Computer Science, </span>
       </div> -->
     </div>
+    <div class="proof-item">
+        <strong>SPARKS</strong>
+        <span>Predoctoral Fellowship Recipient, IISc 2026</span>
+      </div>
+      <!-- <div class="proof-item">
+        <strong></strong>
+        <span>Computer Science, </span>
+      </div> -->
+    </div>
   </section>
 
   <section class="two-column">
