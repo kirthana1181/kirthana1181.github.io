@@ -358,6 +358,7 @@ p {
         <strong></strong>
         <span>Computer Science, </span>
       </div> -->
+    </div>
   </section>
 
   <section class="two-column">
