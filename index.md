@@ -349,7 +349,6 @@ p {
         <strong>CBSE Top 0.1%</strong>
         <span>Computer Science, </span>
       </div> -->
-    </div>
     <div class="proof-item">
         <strong>SPARKS</strong>
         <span>Predoctoral Fellowship Recipient, 
@@ -359,7 +358,6 @@ p {
         <strong></strong>
         <span>Computer Science, </span>
       </div> -->
-    </div>
   </section>
 
   <section class="two-column">
