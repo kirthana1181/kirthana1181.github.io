@@ -310,7 +310,7 @@ p {
           <h1>Hi, I'm Kirthana</h1>
           <p class="hero-role">Pre-Doctoral Fellow at IISc, Bangalore</p>
           <p>
-             Pre-doctoral Fellow at IISc, Bangalore, at the Future Computing Systems (FIST) Research Group, at the Dept. of CSA, with deep interest in the areas of VLSI, AI and Embedded System Design.
+             At the Future Computing Systems (FIST) Research Group, Dept. of CSA, with interests in VLSI, and Full-stack AI Hardware Design.
           </p>
 
           <!-- <div class="focus-chips" aria-label="Focus areas">
