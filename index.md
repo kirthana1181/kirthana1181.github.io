@@ -382,20 +382,19 @@
           <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
         </div>
 
-<div class="profile-text">
-  <h1>Hi, I'm Kirthana</h1>
-  <p class="hero-role">Pre-Doctoral Fellow</p>
-  <p>
-    At the Future Computing Systems (FIST) Research Group, Dept. of CSA, IISc. With interests in VLSI and Full-stack AI Hardware Design.
-  </p>
+    <div class="profile-text">
+      <h1>Hi, I'm Kirthana</h1>
+      <p class="hero-role">Pre-Doctoral Fellow</p>
+      <p>
+        At the Future Computing Systems (FIST) Research Group, Dept. of CSA, IISc. With interests in VLSI and Full-stack AI Hardware Design.
+      </p>
 
-  <div class="hero-actions">
-    <a class="button" href="/projects">View Projects</a>
-    <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>Download CV</a>
-    <a class="button secondary" href="/contact.html">Contact Me</a>
-  </div>
-</div>
-
+      <div class="hero-actions">
+        <a class="button" href="/projects">View Projects</a>
+        <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>Download CV</a>
+        <a class="button secondary" href="/contact.html">Contact Me</a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -525,18 +524,17 @@
           </div>
         </div>
 
-<div class="socials" aria-label="Contact links">
-  <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
-  </a>
-  <a href="https://github.com/kirthana1181" aria-label="GitHub">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
-  </a>
-  <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
-  </a>
-</div>
-
+    <div class="socials" aria-label="Contact links">
+      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
+      </a>
+      <a href="https://github.com/kirthana1181" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
+      </a>
+      <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
+      </a>
+    </div>
   </div>
 </div>
 
