@@ -12,10 +12,11 @@
   --gap: 1rem;
 }
 
-/* Keep the page compact and visually centered inside the Minimal Mistakes layout. */
+/* Use the full available content width of the page. */
 .portfolio-shell {
-  width: min(1100px, calc(100% - 2rem));
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: 0.5rem 0 1.5rem;
   box-sizing: border-box;
 }
@@ -67,6 +68,13 @@
   border-radius: var(--radius);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
+}
+
+.card,
+.hero-card,
+.cta-card,
+.proof-item {
+  width: 100%;
 }
 
 .card {
@@ -188,12 +196,16 @@
   margin-top: 0.2rem;
 }
 
-/* Equal-width content cards. */
+/* Full-width content cards. */
 .two-column {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--gap);
   align-items: stretch;
+}
+
+.two-column > .card {
+  width: 100%;
 }
 
 .project-preview + .project-preview {
@@ -307,7 +319,8 @@
 /* Tablet / mobile */
 @media (max-width: 900px) {
   .portfolio-shell {
-    width: min(100% - 1.5rem, 1100px);
+    width: 100%;
+    max-width: none;
   }
 
   .hero-card {
@@ -315,13 +328,14 @@
   }
 
   .two-column {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 650px) {
   .portfolio-shell {
-    width: min(100% - 1rem, 1100px);
+    width: 100%;
+    max-width: none;
     padding-top: 0.25rem;
   }
 
@@ -359,170 +373,3 @@
   }
 }
 </style>
-
-<div class="portfolio-shell">
-  <section>
-    <div class="hero-card">
-      <div class="profile-container">
-        <div class="profile-image">
-          <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
-        </div>
-
-    <div class="profile-text">
-      <h1>Hi, I'm Kirthana</h1>
-      <p class="hero-role">Pre-Doctoral Fellow</p>
-      <p>
-        At the Future Computing Systems (FIST) Research Group, Dept. of CSA, IISc. With interests in VLSI and Full-stack AI Hardware Design.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button" href="/projects">View Projects</a>
-        <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>Download CV</a>
-        <a class="button secondary" href="/contact.html">Contact Me</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </section>
-
-  <section aria-label="Highlights and achievements">
-    <div class="proof-bar">
-      <div class="proof-item">
-        <strong>Samsung ISWDP</strong>
-        <span>Semiconductor Fellowship Recipient</span>
-      </div>
-
-  <div class="proof-item">
-    <strong>RoboRythm</strong>
-    <span>Second Runner-Up at SOLASTA 2K24</span>
-  </div>
-
-  <div class="proof-item">
-    <strong>SPARKS</strong>
-    <span>Predoctoral Fellowship Recipient, IISc 2026</span>
-  </div>
-</div>
-
-  </section>
-
-  <section class="two-column">
-    <div class="card">
-      <h2>Featured Work</h2>
-
-  <div class="project-preview">
-    <h3>Compressor-Based Dadda Multiplier</h3>
-    <p>Improved speed by <strong>16%</strong> and reduced power by <strong>8%</strong> using optimized compressor logic.</p>
-  </div>
-
-  <div class="project-preview">
-    <h3>RISC-V Pipelined Processor</h3>
-    <p>Implemented a pipelined processor with instruction decoding, register operations and hazard handling.</p>
-  </div>
-
-  <p><a class="text-link" href="/projects"><strong>View all projects</strong></a></p>
-</div>
-
-<div class="card">
-  <h2>Technical Toolkit</h2>
-  <p><strong>Hardware:</strong> Verilog HDL, TL-Verilog HDL, FPGA, RTL, RISC-V.</p>
-  <p><strong>Software:</strong> Python, C, C++, TensorFlow.</p>
-  <p><strong>Tools:</strong> Vivado, Virtuoso, OpenLANE, KiCad, Git, Linux.</p>
-  <p><a class="text-link" href="/skills"><strong>Explore skills</strong></a></p>
-</div>
-
-  </section>
-
-  <section>
-    <div class="card">
-      <h2>Experience</h2>
-
-  <div class="experience-item">
-    <h3>Research Intern, IISc Bangalore</h3>
-    <p class="experience-date">Jan 2026 - July 2026</p>
-    <p>
-      Worked on developing an end-to-end implementation framework for deploying ML Algorithms on FPGAs, as part of an industry project at the Future Computing Systems (FIST) Research group, at the Dept. of Computer Science &amp; Automation.
-    </p>
-    <div class="experience-skills">
-      <span class="experience-tag">Verilog</span>
-      <span class="experience-tag">Machine Learning</span>
-      <span class="experience-tag">FINN Compiler</span>
-      <span class="experience-tag">RTL Design</span>
-      <span class="experience-tag">PyTorch</span>
-      <span class="experience-tag">Bash</span>
-    </div>
-  </div>
-
-  <div class="experience-item">
-    <h3>Summer Intern — NIELIT Calicut</h3>
-    <p class="experience-date">May 2025 – June 2025</p>
-    <p>
-      Hands-on training in FPGA-based digital system design, RTL synthesis, and hardware prototyping, covering the complete RTL to bitstream workflow and multiple digital system implementations.
-    </p>
-    <div class="experience-skills">
-      <span class="experience-tag">Verilog</span>
-      <span class="experience-tag">FPGA</span>
-      <span class="experience-tag">RTL Design &amp; Synthesis</span>
-      <span class="experience-tag">Vivado</span>
-    </div>
-  </div>
-
-  <div class="experience-item">
-    <h3>Research Intern — TiHAN, IIT Hyderabad</h3>
-    <p class="experience-date">June 2024 – July 2024</p>
-    <p>
-      Developed and trained a Machine Learning Model for an ADAS-based Project, achieving over 94% accuracy. Also worked as a Project Intern on Network Handover between Cellular Networks (4G LTE) and Wi-Fi Network, using Bash and OpenAir Interface in Unix CLI.
-    </p>
-    <div class="experience-skills">
-      <span class="experience-tag">Machine Learning</span>
-      <span class="experience-tag">TensorFlow 2.0</span>
-      <span class="experience-tag">Network Handover</span>
-      <span class="experience-tag">Bash</span>
-      <span class="experience-tag">Linux</span>
-    </div>
-  </div>
-</div>
-
-  </section>
-
-  <section>
-    <div class="card">
-      <h2>Beyond Engineering</h2>
-      <p>Apart from STEM, I also:</p>
-      <ul class="compact-list">
-        <li>Carry the passion for music and singing, as a certified Carnatic vocalist and a former musical performer</li>
-        <li>Am a public speaker, and an Emcee</li>
-        <li>Enjoy trekking, hiking and adventure sports!</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="cta-card">
-      <div class="cta-content">
-        <div>
-          <h2>Open to Opportunities</h2>
-          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
-          <div class="opportunity-tags">
-            <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
-            <span class="opportunity-tag">Embedded Software</span>
-            <span class="opportunity-tag">AI Acceleration</span>
-          </div>
-        </div>
-
-    <div class="socials" aria-label="Contact links">
-      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
-      </a>
-      <a href="https://github.com/kirthana1181" aria-label="GitHub">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
-      </a>
-      <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
-      </a>
-    </div>
-  </div>
-</div>
-
-  </section>
-</div>
