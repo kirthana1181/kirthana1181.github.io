@@ -64,6 +64,7 @@
 .hero-card,
 .cta-card,
 .proof-item {
+  width: 100%;
   background: var(--card);
   border-radius: var(--radius);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
@@ -199,7 +200,7 @@
 /* Full-width content cards. */
 .two-column {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--gap);
   align-items: stretch;
 }
@@ -320,7 +321,6 @@
 @media (max-width: 900px) {
   .portfolio-shell {
     width: 100%;
-    max-width: none;
   }
 
   .hero-card {
@@ -335,7 +335,6 @@
 @media (max-width: 650px) {
   .portfolio-shell {
     width: 100%;
-    max-width: none;
     padding-top: 0.25rem;
   }
 
