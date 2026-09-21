@@ -165,6 +165,24 @@
   border: 1px solid #c7d2fe;
 }
 
+/* Top welcome + opportunities cards */
+.top-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+.top-cards > section {
+  margin: 0;
+  min-width: 0;
+}
+
+.top-cards .hero-card,
+.top-cards .cta-card {
+  height: 100%;
+}
+
 /* Three equal highlight cards. */
 .proof-bar {
   display: grid;
@@ -327,6 +345,10 @@
     padding: 1.5rem;
   }
 
+  .top-cards {
+    grid-template-columns: 1fr;
+  }
+
   .two-column {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -374,6 +396,7 @@
 </style>
 
 <div class="portfolio-shell">
+  <div class="top-cards">
   <section>
     <div class="hero-card">
       <div class="profile-container">
@@ -398,6 +421,36 @@
 </div>
 
   </section>
+
+    <section>
+    <div class="cta-card">
+      <div class="cta-content">
+        <div>
+          <h2>Open to Opportunities</h2>
+          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
+          <div class="opportunity-tags">
+            <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
+            <span class="opportunity-tag">Embedded Software</span>
+            <span class="opportunity-tag">AI Acceleration</span>
+          </div>
+        </div>
+
+    <div class="socials" aria-label="Contact links">
+      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
+      </a>
+      <a href="https://github.com/kirthana1181" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
+      </a>
+      <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+  </section>
+  </div>
 
   <section aria-label="Highlights and achievements">
     <div class="proof-bar">
@@ -510,32 +563,5 @@
     </div>
   </section>
 
-  <section>
-    <div class="cta-card">
-      <div class="cta-content">
-        <div>
-          <h2>Open to Opportunities</h2>
-          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
-          <div class="opportunity-tags">
-            <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
-            <span class="opportunity-tag">Embedded Software</span>
-            <span class="opportunity-tag">AI Acceleration</span>
-          </div>
-        </div>
 
-    <div class="socials" aria-label="Contact links">
-      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
-      </a>
-      <a href="https://github.com/kirthana1181" aria-label="GitHub">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
-      </a>
-      <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
-      </a>
-    </div>
-  </div>
-</div>
-
-  </section>
 </div>
