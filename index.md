@@ -14,10 +14,11 @@
 
 /* Use the full available content width of the page. */
 .portfolio-shell {
-  width: 100%;
+  width: calc(100vw - 3rem);
   max-width: none;
-  margin: 0;
-  padding: 0.5rem 0 1.5rem;
+  margin-left: calc(50% - 50vw + 1.5rem);
+  margin-right: 0;
+  padding: 0.75rem 0 1.5rem;
   box-sizing: border-box;
 }
 
@@ -71,13 +72,6 @@
   box-sizing: border-box;
 }
 
-.card,
-.hero-card,
-.cta-card,
-.proof-item {
-  width: 100%;
-}
-
 .card {
   height: 100%;
   padding: 1.2rem 1.35rem;
@@ -92,7 +86,7 @@
 .profile-container {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
   text-align: left;
 }
 
@@ -111,6 +105,7 @@
 }
 
 .profile-text {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -168,7 +163,7 @@
 /* Top welcome + opportunities cards */
 .top-cards {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(360px, 1fr);
   gap: var(--gap);
   align-items: stretch;
 }
@@ -303,13 +298,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
+  height: 100%;
 }
 
 .socials {
   display: flex;
   flex: 0 0 auto;
   gap: 0.6rem;
+  align-self: flex-end;
 }
 
 .socials a {
@@ -338,7 +335,8 @@
 /* Tablet / mobile */
 @media (max-width: 900px) {
   .portfolio-shell {
-    width: 100%;
+    width: calc(100vw - 2rem);
+    margin-left: calc(50% - 50vw + 1rem);
   }
 
   .hero-card {
@@ -356,7 +354,8 @@
 
 @media (max-width: 650px) {
   .portfolio-shell {
-    width: 100%;
+    width: calc(100vw - 1rem);
+    margin-left: calc(50% - 50vw + 0.5rem);
     padding-top: 0.25rem;
   }
 
@@ -390,6 +389,7 @@
   }
 
   .socials {
+    align-self: flex-start;
     margin-top: 0.15rem;
   }
 }
@@ -404,48 +404,50 @@
           <img src="/assets/images/profile.jpg" alt="Profile photo of Kirthana">
         </div>
 
-    <div class="profile-text">
-      <h1>Hi, I'm Kirthana</h1>
-      <p class="hero-role">Pre-Doctoral Fellow</p>
-      <p>
-        At the Future Computing Systems (FIST) Research Group, Dept. of CSA, IISc. With interests in VLSI and Full-stack AI Hardware Design.
-      </p>
+<div class="profile-text">
+  <h1>Hi, I'm Kirthana</h1>
+  <p class="hero-role">Pre-Doctoral Fellow</p>
+  <p>
+    At the Future Computing Systems (FIST) Research Group, Dept. of CSA, IISc. With interests in VLSI and Full-stack AI Hardware Design.
+  </p>
 
-      <div class="hero-actions">
-        <a class="button" href="/projects">View Projects</a>
-        <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>Download CV</a>
-        <a class="button secondary" href="/contact.html">Contact Me</a>
-      </div>
-    </div>
+  <div class="hero-actions">
+    <a class="button" href="/projects">View Projects</a>
+    <a class="button secondary" href="/assets/docs/KIRTHANA P RAO_CV1.pdf" download>Download CV</a>
+    <a class="button secondary" href="/contact.html">Contact Me</a>
+  </div>
+</div>
+
   </div>
 </div>
 
   </section>
 
-    <section>
-    <div class="cta-card">
-      <div class="cta-content">
-        <div>
-          <h2>Open to Opportunities</h2>
-          <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
-          <div class="opportunity-tags">
-            <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
-            <span class="opportunity-tag">Embedded Software</span>
-            <span class="opportunity-tag">AI Acceleration</span>
-          </div>
-        </div>
-
-    <div class="socials" aria-label="Contact links">
-      <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
-      </a>
-      <a href="https://github.com/kirthana1181" aria-label="GitHub">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
-      </a>
-      <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
-      </a>
+<section>
+<div class="cta-card">
+  <div class="cta-content">
+    <div>
+      <h2>Open to Opportunities</h2>
+      <p>Seeking internships, research roles and collaborations in VLSI, FPGA, AI Hardware and Embedded System Design.</p>
+      <div class="opportunity-tags">
+        <span class="opportunity-tag">VLSI Design and Computer Architecture</span>
+        <span class="opportunity-tag">Embedded Software</span>
+        <span class="opportunity-tag">AI Acceleration</span>
+      </div>
     </div>
+
+<div class="socials" aria-label="Contact links">
+  <a href="https://www.linkedin.com/in/kirthana-p-6b89b326b/" aria-label="LinkedIn">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="">
+  </a>
+  <a href="https://github.com/kirthana1181" aria-label="GitHub">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="">
+  </a>
+  <a href="mailto:work.kirthana@gmail.com" aria-label="Email">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="">
+  </a>
+</div>
+
   </div>
 </div>
 
@@ -562,6 +564,5 @@
       </ul>
     </div>
   </section>
-
 
 </div>
